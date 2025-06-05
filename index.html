@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antarmanh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="script" href="script.js"> -->
+
+
+</head>
+
+<body>
+
+    <div class="scroll-left">
+        <p>The Manasthali helpline number has been temporarily paused. For appointments, please call or WhatsApp +91 -
+            9958598967
+        </p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand logo-div" href="#"><img class="logo" src="assets/logo.png" alt=""></a>
+
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse " id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 k-mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link "> Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link ">Publications</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link ">Insights</a>
+                    </li>
+                    <!-- Dropdown 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                            <li><a class="dropdown-item" href="#">Action 1</a></li>
+                            <li><a class="dropdown-item" href="#">Another Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something Else</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                            <li><a class="dropdown-item" href="#">Option A</a></li>
+                            <li><a class="dropdown-item" href="#">Option B</a></li>
+                            <li><a class="dropdown-item" href="#">Option C</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!-- Right side search icon -->
+                <div class="d-flex icon ">
+                    <a href="#" class="nav-link ico">
+                        <i class="bi bi-search search-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section of Landing page -->
+
+    <div class="hero-section">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="assets/integratedwellness_front.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/slide01.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/slide02.jpg" style="width:100%">
+            </div>
+            <!-- <div class="mySlides fade">
+                <img src="assets/slide04.png" style="width:100%">
+            </div> -->
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+
+
+    <!-- What We Do Section -->
+
+    <section class="container py-5" id="therapy-services">
+        <div class="therapy-header">
+            <h2>Our Therapeutic Services</h2>
+            <p class="text-muted">Click on any service to learn more</p>
+        </div>
+
+        <!-- Therapy Cards Carousel -->
+        <div id="therapyCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <!-- Carousel Items will be added dynamically by JavaScript -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#therapyCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#therapyCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Therapy Details Modal -->
+    <div class="modal fade therapy-modal" id="therapyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="therapyModalLabel">Service Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="" id="modalTherapyImage" class="img-fluid rounded mb-3" alt="Therapy Image">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="modalTherapyTitle" class="mb-3"></h4>
+                            <p id="modalTherapyDescription" class="mb-4"></p>
+                            <h5>Key Features:</h5>
+                            <ul class="therapy-features" id="modalTherapyFeatures">
+                                <!-- Features will be added by JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Book a Session</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Booking Appointment  Hero Section -->
+
+
+    <section class="booking-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Book Your Session</h1>
+            <p class="lead">Choose between online therapy or in-person visits at our clinic</p>
+        </div>
+    </section>
+
+    <!-- Mode Selector -->
+    <div class="container mb-5">
+        <ul class="nav mode-selector nav-pills justify-content-center" id="bookingModeTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="online-tab" data-bs-toggle="pill" data-bs-target="#online"
+                    type="button" role="tab">
+                    <i class="fas fa-video me-2"></i> Online Session
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="offline-tab" data-bs-toggle="pill" data-bs-target="#offline" type="button"
+                    role="tab">
+                    <i class="fas fa-clinic-medical me-2"></i> In-Person Visit
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Booking Content -->
+    <div class="container">
+        <div class="tab-content" id="bookingModeTabContent">
+            <!-- Online Booking Tab -->
+            <div class="tab-pane fade show active" id="online" role="tabpanel">
+                <div class="row">
+                    <!-- Therapist Selection -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="booking-card h-100">
+                            <div class="booking-card-header">
+                                <h5 class="mb-0">Select Therapist</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" class="therapist-img"
+                                    alt="Dr. Sarah Johnson">
+                                <h4>Dr. Sarah Johnson</h4>
+                                <p class="text-muted">PhD, Clinical Psychologist</p>
+                                <p class="mb-4">Specializes in anxiety and trauma therapy</p>
+
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="badge bg-primary-light me-2">CBT</span>
+                                    <span class="badge bg-primary-light">EMDR</span>
+                                </div>
+
+                                <select class="form-select mb-4">
+                                    <option selected>Select Service</option>
+                                    <option>Individual Therapy (50 min)</option>
+                                    <option>Couples Counseling (75 min)</option>
+                                </select>
+
+                                <button class="btn btn-outline-primary w-100 mb-3" data-bs-toggle="modal"
+                                    data-bs-target="#therapistModal">
+                                    View Full Profile
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Date/Time Selection -->
+                    <div class="col-lg-8">
+                        <div class="booking-card mb-4">
+                            <div class="booking-card-header">
+                                <h5 class="mb-0">Select Date & Time</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label">Choose Date</label>
+                                        <input type="text" class="form-control datepicker" placeholder="Select date">
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label">Time Zone</label>
+                                        <select class="form-select">
+                                            <option selected>GMT+5:30 (India Standard Time)</option>
+                                            <option>GMT-5 (Eastern Time)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-3">Available Time Slots</h6>
+                                <div class="time-slots">
+                                    <div class="row">
+                                        <div class="col-4 col-md-3 mb-2">
+                                            <div class="time-slot text-center">9:00 AM</div>
+                                        </div>
+                                        <div class="col-4 col-md-3 mb-2">
+                                            <div class="time-slot text-center">10:00 AM</div>
+                                        </div>
+                                        <div class="col-4 col-md-3 mb-2">
+                                            <div class="time-slot text-center selected">11:00 AM</div>
+                                        </div>
+                                        <!-- More time slots -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="booking-card">
+                            <div class="booking-card-header">
+                                <h5 class="mb-0">Payment Method</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod"
+                                            id="creditCard" checked>
+                                        <label class="form-check-label" for="creditCard">
+                                            <i class="fab fa-cc-visa me-2"></i> Credit/Debit Card
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="paypal">
+                                        <label class="form-check-label" for="paypal">
+                                            <i class="fab fa-cc-paypal me-2"></i> PayPal
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod"
+                                            id="insurance">
+                                        <label class="form-check-label" for="insurance">
+                                            <i class="fas fa-file-invoice-dollar me-2"></i> Use Insurance
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid mt-4">
+                                    <button class="btn btn-book" data-bs-toggle="modal"
+                                        data-bs-target="#confirmationModal">
+                                        <i class="fas fa-calendar-check me-2"></i> Confirm Booking
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offline Booking Tab -->
+            <div class="tab-pane fade" id="offline" role="tabpanel">
+                <div class="row">
+                    <!-- Clinic Selection -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="booking-card h-100">
+                            <div class="booking-card-header">
+                                <h5 class="mb-0">Select Location</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="clinicLocation" id="mainClinic"
+                                        checked>
+                                    <label class="form-check-label" for="mainClinic">
+                                        <h6>Main Wellness Center</h6>
+                                        <p class="text-muted small">123 Therapy St, Mental Health City</p>
+                                    </label>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="radio" name="clinicLocation"
+                                        id="downtownClinic">
+                                    <label class="form-check-label" for="downtownClinic">
+                                        <h6>Downtown Clinic</h6>
+                                        <p class="text-muted small">456 Care Ave, Downtown</p>
+                                    </label>
+                                </div>
+
+                                <div class="map-container mb-4">
+                                    <iframe src="https://www.google.com/maps/embed?pb=..."
+                                        style="border:0; width:100%; height:100%;" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="alert alert-info">
+                                    <i class="fas fa-info-circle me-2"></i> Free parking available at all locations
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Date/Time Selection -->
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="booking-card h-100">
+                                    <div class="booking-card-header">
+                                        <h5 class="mb-0">Select Therapist</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <select class="form-select mb-3">
+                                            <option selected>Any Available Therapist</option>
+                                            <option>Dr. Sarah Johnson</option>
+                                            <option>Dr. Michael Chen</option>
+                                        </select>
+
+                                        <select class="form-select">
+                                            <option selected>Select Service</option>
+                                            <option>Initial Consultation</option>
+                                            <option>Individual Therapy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="booking-card h-100">
+                                    <div class="booking-card-header">
+                                        <h5 class="mb-0">Select Date</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <input type="text" class="form-control datepicker" placeholder="Select date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Time Slots -->
+                        <div class="booking-card mb-4">
+                            <div class="booking-card-header">
+                                <h5 class="mb-0">Available Time Slots</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4 col-md-3 mb-2">
+                                        <div class="time-slot text-center">9:00 AM</div>
+                                    </div>
+                                    <div class="col-4 col-md-3 mb-2">
+                                        <div class="time-slot text-center">10:00 AM</div>
+                                    </div>
+                                    <div class="col-4 col-md-3 mb-2">
+                                        <div class="time-slot text-center selected">11:00 AM</div>
+                                    </div>
+                                    <!-- More time slots -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Patient Information -->
+                        <div class="booking-card">
+                            <div class="booking-card-header">
+                                <h5 class="mb-0">Your Information</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Special Requests</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+
+                                <div class="d-grid mt-4">
+                                    <button class="btn btn-book" data-bs-toggle="modal"
+                                        data-bs-target="#confirmationModal">
+                                        <i class="fas fa-calendar-check me-2"></i> Book Appointment
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="mb-3">Appointment Booked!</h3>
+                    <p class="mb-4">Your session has been confirmed. We've sent the details to your email.</p>
+
+                    <div class="booking-details mb-4 p-3 bg-light rounded">
+                        <p class="mb-1"><strong>Date:</strong> <span id="confirmedDate">June 15, 2023</span></p>
+                        <p class="mb-1"><strong>Time:</strong> <span id="confirmedTime">11:00 AM</span></p>
+                        <p class="mb-1"><strong>With:</strong> <span id="confirmedTherapist">Dr. Sarah Johnson</span>
+                        </p>
+                        <p class="mb-0"><strong>Type:</strong> <span id="confirmedType">Online Session</span></p>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                            <i class="fas fa-calendar-alt me-2"></i> Add to Calendar
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Therapist Modal -->
+    <div class="modal fade" id="therapistModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Therapist Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg"
+                                class="img-fluid rounded-circle mb-3" alt="Dr. Sarah Johnson"
+                                style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <p class="text-muted">PhD, Clinical Psychologist</p>
+                            <hr>
+                            <p><i class="fas fa-graduation-cap me-2"></i> Yale University, 2012</p>
+                            <p><i class="fas fa-star me-2"></i> 4.9 (128 reviews)</p>
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="mb-3">About</h5>
+                            <p>Dr. Johnson specializes in cognitive behavioral therapy for anxiety disorders and trauma.
+                                With over 10 years of clinical experience, she takes a compassionate, evidence-based
+                                approach to help clients achieve meaningful change.</p>
+
+                            <h5 class="mb-3 mt-4">Specializations</h5>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-primary">Anxiety Disorders</span>
+                                <span class="badge bg-primary">PTSD</span>
+                                <span class="badge bg-primary">CBT</span>
+                                <span class="badge bg-primary">Mindfulness</span>
+                            </div>
+
+                            <h5 class="mb-3">Education</h5>
+                            <ul class="list-unstyled">
+                                <li><strong>PhD in Clinical Psychology</strong> - Yale University</li>
+                                <li><strong>Internship</strong> - Massachusetts General Hospital</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Book Session</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Clienet Testimonial reviews -->
+
+    <div class="testimonial-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Success Stories</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card mx-auto">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="testimonial-text">"This therapy changed my life completely..."</p>
+                            <div class="client-info">
+                                <strong>— Michael T.</strong>
+                                <span class="d-block text-muted">Anxiety Treatment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <img src="assets/logo.png" alt="Company Logo" class="footer-logo">
+                    <p class="text-secondary">Providing compassionate mental health care since 2010. Our team of
+                        professionals is dedicated to your well-being.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Therapists</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-heading">Our Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Individual Therapy</a></li>
+                        <li><a href="#">Couples Counseling</a></li>
+                        <li><a href="#">Family Therapy</a></li>
+                        <li><a href="#">Teen Counseling</a></li>
+                        <li><a href="#">Trauma Therapy</a></li>
+                        <li><a href="#">Online Sessions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Therapy Street, Mental Health City, MH 12345</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@yourtherapycenter.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 9:00 AM - 7:00 PM<br>Sat: 10:00 AM - 4:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2023 Your Therapy Center. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="text-secondary me-3">Privacy Policy</a>
+                        <a href="#" class="text-secondary me-3">Terms of Service</a>
+                        <a href="#" class="text-secondary">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</body>
+
+</html>
