@@ -29,67 +29,70 @@
         </p>
     </div>
 
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-            <a class="navbar-brand logo-div" href="#"><img class="logo" src="assets/logo.png" alt=""></a>
+   <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand logo-div" href="#"><img class="logo" src="assets/logo.png" alt=""></a>
 
-            <!-- Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
+        <!-- Toggle Button - Modified for custom functionality -->
+        <div class="navbar-toggler-wrapper">
+            <button class="navbar-toggler custom-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
+            <button class="navbar-close" aria-label="Close navigation" style="display: none;">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
 
-            <!-- Navbar content -->
-            <div class="collapse navbar-collapse " id="navbarContent">
-                <ul class="navbar-nav me-auto mb-2 k-mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link "> Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link ">Publications</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link ">Insights</a>
-                    </li>
-                    <!-- Dropdown 1 -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown1" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Our Services
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown1">
-                            <li><a class="dropdown-item" href="#">Action 1</a></li>
-                            <li><a class="dropdown-item" href="#">Another Action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something Else</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Dropdown 2 -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown2" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            About Us
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown2">
-                            <li><a class="dropdown-item" href="#">Option A</a></li>
-                            <li><a class="dropdown-item" href="#">Option B</a></li>
-                            <li><a class="dropdown-item" href="#">Option C</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-
-                <!-- Right side search icon -->
-                <div class="d-flex icon ">
-                    <a href="#" class="nav-link ico">
-                        <i class="bi bi-search search-icon"></i>
+        <!-- Navbar content - Modified structure -->
+        <div class="navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 k-mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Insights</a>
+                </li>
+                <!-- Dropdown 1 - Modified for custom functionality -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button">
+                        Our Services 
                     </a>
-                </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Another Action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something Else</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown 2 - Modified for custom functionality -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button">
+                        About Us 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Option A</a></li>
+                        <li><a class="dropdown-item" href="#">Option B</a></li>
+                        <li><a class="dropdown-item" href="#">Option C</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Right side search icon -->
+            <div class="d-flex icon">
+                <a href="#" class="nav-link ico">
+                    <i class="bi bi-search search-icon"></i>
+                </a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
 

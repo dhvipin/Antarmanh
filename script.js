@@ -25,6 +25,103 @@
 // });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const toggler = document.querySelector('.custom-toggler');
+    const closer = document.querySelector('.navbar-close');
+    const collapse = document.querySelector('.navbar-collapse');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    // Toggle main navbar
+    function toggleNavbar() {
+        collapse.classList.toggle('show');
+        
+        // Toggle buttons visibility
+        toggler.style.display = collapse.classList.contains('show') ? 'none' : 'block';
+        closer.style.display = collapse.classList.contains('show') ? 'block' : 'none';
+        
+        // Add/remove overlay when menu is open/closed
+        if (collapse.classList.contains('show')) {
+            const overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            overlay.addEventListener('click', closeNavbar);
+            document.body.appendChild(overlay);
+        } else {
+            const overlay = document.querySelector('.overlay');
+            if (overlay) {
+                document.body.removeChild(overlay);
+            }
+        }
+    }
+    
+    function closeNavbar() {
+        collapse.classList.remove('show');
+        toggler.style.display = 'block';
+        closer.style.display = 'none';
+        const overlay = document.querySelector('.overlay');
+        if (overlay) {
+            document.body.removeChild(overlay);
+        }
+        
+        // Close all dropdowns when closing navbar
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+            menu.classList.remove('show');
+        });
+        document.querySelectorAll('.dropdown-icon').forEach(icon => {
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
+        });
+    }
+    
+    toggler.addEventListener('click', toggleNavbar);
+    closer.addEventListener('click', closeNavbar);
+    
+    // Toggle dropdowns on mobile
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            if (window.innerWidth <= 991) {
+                e.preventDefault();
+                const dropdown = this.parentElement.querySelector('.dropdown-menu');
+                const icon = this.querySelector('.dropdown-icon');
+                
+                dropdown.classList.toggle('show');
+                
+                // Rotate chevron icon
+                if (icon) {
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                }
+            }
+        });
+    });
+    
+    // Close dropdowns when clicking outside (desktop)
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth > 991) {
+            dropdownToggles.forEach(toggle => {
+                const dropdown = toggle.parentElement.querySelector('.dropdown-menu');
+                if (!toggle.contains(e.target) && (!dropdown || !dropdown.contains(e.target))) {
+                    if (dropdown) dropdown.classList.remove('show');
+                    const icon = toggle.querySelector('.dropdown-icon');
+                    if (icon) {
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                }
+            });
+        }
+    });
+    
+    // Close navbar when clicking a link (mobile)
+    const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 991) {
+                closeNavbar();
+            }
+        });
+    });
+});
+
 
 
 // Hero Section landing page scrolling Js
