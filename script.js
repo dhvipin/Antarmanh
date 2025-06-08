@@ -362,7 +362,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // Initialize date picker
         flatpickr(".datepicker", {
             minDate: "today",
-            maxDate: new Date().fp_incr(30) // 30 days from now
+            maxDate: new Date().fp_incr(30), // 30 days from now
+            disable: [
+                function(date) {
+                    // Disable weekends
+                    return (date.getDay() === 0 || date.getDay() === 6);
+                }
+            ]
         });
         
         // Time slot selection
@@ -374,15 +380,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         
         // Form submission (example)
-        document.querySelectorAll('.btn-book').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                if (!document.querySelector('.time-slot.selected')) {
-                    e.preventDefault();
-                    alert('Please select a time slot');
-                }
-                // In real implementation, you would submit the form here
-            });
+        document.querySelector('.btn-book').addEventListener('click', function(e) {
+            if (!document.querySelector('.time-slot.selected')) {
+                e.preventDefault();
+                alert('Please select a time slot');
+                return;
+            }
+            
+            // In real implementation, you would submit the form here
+            // For demo, we'll just update the confirmation modal
+            const selectedDate = document.querySelector('.datepicker').value;
+            const selectedTime = document.querySelector('.time-slot.selected').textContent;
+            const selectedLocation = document.querySelector('input[name="clinicLocation"]:checked').nextElementSibling.querySelector('h6').textContent;
+            const selectedTherapist = document.querySelector('select').value;
+            
+            document.getElementById('confirmedDate').textContent = selectedDate || 'June 15, 2023';
+            document.getElementById('confirmedTime').textContent = selectedTime;
+            document.getElementById('confirmedLocation').textContent = selectedLocation;
+            document.getElementById('confirmedTherapist').textContent = selectedTherapist;
         });
+
+
+        // about section js 
+         AOS.init({ duration: 1000, once: true });
 
 
 
@@ -424,3 +444,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+// Call to action section js
