@@ -1,0 +1,122 @@
+/* About page csss alll are here  */
+:root {
+    --primary-color: #a94a82;
+    --secondary-color: #f8f9fa;
+    /* --dark-color: #343a40; */
+    --light-color: #ffffff;
+    --accent-color: #f8f9fc;
+    --text-color: #5a5c69;
+    --dark-color: #2c3e50;
+}
+
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 2.5rem;
+    color: var(--dark-color);
+}
+
+.section-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.about-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+    transition: all 0.3s ease;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1.5rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    margin: 0 auto 20px;
+}
+
+.social-icons a {
+    color: var(--text-color);
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+.mission-div{
+    background-color: var(--primary-color);
+}
+
+.breadcrumb-item.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 3rem 0;
+}
+
+.hindi-text {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1.1em;
+}
