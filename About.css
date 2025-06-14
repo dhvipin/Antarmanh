@@ -120,3 +120,41 @@ footer {
     font-family: 'Noto Sans Devanagari', sans-serif;
     font-size: 1.1em;
 }
+
+
+
+/* new tst  */
+.quote-box {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      background: #fff;
+      padding: 20px;
+      border-left: 4px solid #c59f7b;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 250px;
+      font-style: italic;
+    }
+    .quote-box::before {
+      content: "“";
+      font-size: 3rem;
+      color: #c59f7b;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+    }
+    .dots {
+      position: absolute;
+      top: 20px;
+      left: -40px;
+      z-index: 0;
+      opacity: 0.2;
+    }
+    .section-container {
+      position: relative;
+      padding: 60px 0;
+    }
+    .signature {
+      margin-top: 30px;
+      font-family: 'Cursive';
+    }
