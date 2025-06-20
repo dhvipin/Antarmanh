@@ -1,0 +1,264 @@
+/* About page csss alll are here  */
+:root {
+    --primary-color: #a94a82;
+    --secondary-color: #f8f9fa;
+    /* --dark-color: #343a40; */
+    --light-color: #ffffff;
+    --accent-color: #f8f9fc;
+    --text-color: #5a5c69;
+    --dark-color: #2c3e50;
+}
+
+
+
+body {
+  font-family: "Roboto";
+   font-weight: 400;
+     font-style: normal;
+    color: var(--text-color);
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 2.5rem;
+    color: var(--dark-color);
+}
+
+.section-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.about-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+    transition: all 0.3s ease;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1.5rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--accent-color);
+    margin: 0 auto 20px;
+}
+
+.social-icons a {
+    color: var(--text-color);
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.mission-div {
+    background-color: var(--primary-color);
+}
+
+.mission-text h2 {
+    font-weight: 700;
+}
+
+.mission-text p {
+    font-size: 17px;
+}
+
+.breadcrumb-item.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+
+.hindi-text {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+/* section csss  who we are  */
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.text-orange {
+    color: rgb(111, 111, 247);
+}
+
+.vision-card {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mission-card {
+    background-color: var(--dark-color);
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* TEam section css  */
+team-section {
+    padding: 60px 0;
+    background: #fff;
+    width: 100%;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #a94a82;
+    margin-bottom: 10px;
+}
+
+.team-section p.subheading {
+    color: #999;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-card {
+    background: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 0;
+    overflow: hidden;
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.team-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.team-role {
+    font-size: 16px;
+    color: #a94a82;
+    margin-bottom: 15px;
+}
+
+.team-social i {
+    font-size: 18px;
+    color: #333;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.team-social i:hover {
+    color: #a94a82;
+}
+
+.btn-profile {
+    background: #a94a82;
+    border: none;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #a94a82;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #a94a82;
+    border-radius: 50%;
+}
+
+.carousel-item .row {
+    min-height: 500px;
+}
+
+.team-text {
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    .team-text {
+        padding: 30px 20px;
+    }
+
+    .carousel-item .row {
+        flex-direction: column;
+    }
+
+    .team-img {
+        height: 300px;
+        object-fit: cover;
+    }
+}
