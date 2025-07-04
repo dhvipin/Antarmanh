@@ -3,17 +3,255 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Therapy Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Awesome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        /* color: #333; */
+    }
+
+    section {
+        padding: 80px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    .circle-group {
+        position: relative;
+        display: inline-block;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .circle {
+        border-radius: 50%;
+        overflow: hidden;
+        border: 6px solid #fff;
+        position: absolute;
+        background: #fff;
+    }
+
+    .circle img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Big circle on the right */
+    .circle.big {
+        width: 220px;
+        height: 220px;
+        right: -30px;
+        top: 10px;
+        z-index: 2;
+    }
+
+    /* Medium circle in the center-left */
+    .circle.medium {
+        width: 140px;
+        height: 140px;
+        left: -20px;
+        bottom: 0;
+        z-index: 3;
+    }
+
+    /* Small circle on top-left */
+    .circle.small {
+        width: 100px;
+        height: 100px;
+        left: 40px;
+        top: -30px;
+        z-index: 3;
+    }
+
+    /* Decorative circles */
+    .decorative {
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .decorative.white {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #fff;
+        left: -10px;
+        top: 20px;
+    }
+
+    .decorative.peach {
+        width: 60px;
+        height: 60px;
+        border: 8px solid #f6b8a9;
+        right: -20px;
+        bottom: 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0 auto 20px;
+        line-height: 1.6;
+        font-size: 16px;
+        /* color: #555; */
+    }
+
+    .btn {
+        display: inline-block;
+        background: #2c4988;
+        color: #fff;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+
+
+
+    .medsec-wrapper {
+        padding: 60px 20px;
+    }
+
+    .medsec-flexbox {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .medsec-images {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex: 1 1 450px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .medsec-imgcard {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex: 1 1 180px;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+    }
+
+    .medsec-imgcard img {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .medsec-years {
+        font-size: 24px;
+        font-weight: 700;
+        color: #a94a82;
+        margin-top: 10px;
+    }
+
+    .medsec-years span {
+        font-size: 16px;
+        color: #333;
+        display: block;
+        font-weight: 400;
+    }
+
+    .medsec-content {
+        flex: 1 1 500px;
+    }
+
+    .medsec-content h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: #111;
+    }
+
+    .medsec-content p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .medsec-stats {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .medsec-statitem {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex: 1 1 180px;
+    }
+
+    .medsec-staticon {
+        width: 40px;
+        height: 40px;
+        background: #e5f1ff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: #a94a82;
+    }
+
+    .medsec-stattext {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .medsec-stattext strong {
+        display: block;
+        font-size: 20px;
+        color: #a94a82;
+        font-weight: 700;
+    }
+
+    .medsec-feature {
+        border-left: 3px solid #3f71e8;
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .medsec-feature p {
+        margin: 0;
+        font-size: 16px;
+        color: #555;
+    }
+</style>
 
 <body>
 
 
-  <!-- index.php -->
+    <!-- index.php  header-->
 
     <div class="scroll-left">
         <p>The Manasthali helpline number has been temporarily paused. For appointments, please call or WhatsApp +91 -
@@ -74,7 +312,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="">Educations</a>
+                                <a class="dropdown-item" href="#">Educations</a>
                                 <ul class="dropdown-menu submenu">
                                     <li><a class="dropdown-item" href="#">Awareness</a></li>
                                     <li><a class="dropdown-item" href="#">Trainings</a></li>
@@ -118,173 +356,151 @@
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
- <!-- Hero Section -->
-    <section class="hero-section-about  ">
+
+    <!-- Hero Section -->
+    <section class="hero-section-about">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-3">Clinical मन:स्थली</h1>
+            <h1 class="display-4 fw-bold mb-3">Teams मन:स्थली</h1>
             <nav aria-label="breadcrumb" class="d-flex justify-content-center">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-                    <li class="breadcrumb-item active text-white">Clinical therapies</li>
+                    <li class="breadcrumb-item active text-white">Teams</li>
                 </ol>
             </nav>
         </div>
     </section>
 
-    <div class="container py-5">
 
-        <!-- Top Row with 2 Images -->
-        <div class="row g-3 mb-4">
-            <div class="col-md-6 img-col">
-                <img src="assets/clinical1.png" alt="Image 1" class="img-fluid">
-            </div>
-            <div class="col-md-6 img-col">
-                <img src="assets/clinical2.png" alt="Image 2" class="img-fluid">
-            </div>
-        </div>
-
-        <!-- Section Title -->
-        <h2 class="section-title">Psychiatry</h2>
-        <p>
-            Psychiatric Disorders can range from mild anxiety issues to major psychosis and the consequence of such
-            issues leads to poor quality of personal, social as well as physical health. At Manasthali, we ensure
-            comprehensive understanding of the psychiatric issues as per international classification of diseases to
-            make a pragmatic clinical diagnosis and follow a rational approach for management using medicines as well as
-            Psycho education. Clients and care givers are considered partners in treatment and therefore emphasis is on
-            transparency and cooperation.
-        </p>
-
-        <!-- Two Column Layout -->
-        <div class="row mt-5">
-
-            <!-- Left: Therapy Details + Accordion -->
-            <div class="col-md-6">
-                <h4 class="section-title">Liaison </h4>
-                <p>
-                    Liaison Psychiatry, also known as Consultation-Liaison Psychiatry, is a specialized service at
-                    Manasthali that focuses on the intersection of mental and physical health. Designed for patients
-                    receiving medical or surgical care, this service addresses psychiatric concerns that often arise
-                    alongside physical illnesses. Our team collaborates closely with hospitals and healthcare
-                    professionals to provide timely psychiatric evaluations, emotional support, and mental health
-                    interventions within medical settings.
-                    By integrating psychiatrists, clinical psychologists, nurses we ensure a comprehensive,
-                    multidisciplinary approach tailored to each patient’s unique needs. Liaison Psychiatry is especially
-                    effective in areas such as geriatrics, oncology, neuropsychiatry, and in managing medically
-                    unexplained symptoms. In addition to direct patient care, we support medical teams through mental
-                    health consultations and professional training. This integrated care model improves patient
-                    outcomes, shortens recovery time, and enhances overall quality of life.
-
-                </p>
-
-                <div class="accordion" id="therapyAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne">
-                                Psychological Assessment
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#therapyAccordion">
-                            <div class="accordion-body">
-                                Assessment helps us understand cognitive, emotional and behavioral functions to build a
-                                tailored treatment plan.
+    <section class="team-section">
+        <div class="container">
+            <h2 class="mb-5">Team Awesome</h2>
+            <div class="row justify-content-center">
+                <!-- Member 1 -->
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <div class="yellow-bg"></div>
+                        <img src="assets/team_01-removebg-preview.png" alt="Robert Mcgrath" class="img-fluid" />
+                        <div class="team-info">
+                            <h5>ROBERT MCGRATH</h5>
+                            <div class="underline"></div>
+                            <p>Founder</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo">
-                                Psychotherapy and Counselling
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#therapyAccordion">
-                            <div class="accordion-body">
-                                One-on-one or group sessions to help manage stress, trauma, depression, or relationship
-                                issues.
+                </div>
+                <!-- Member 2 -->
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <div class="yellow-bg"></div>
+                        <img src="assets/team_02-removebg-preview.png" alt="Michelle Mager" class="img-fluid" />
+                        <div class="team-info">
+                            <h5>MICHELLE MAGER</h5>
+                            <div class="underline"></div>
+                            <p>Marketing Head</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree">
-                                Child and Adolescent Services
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse show"
-                            data-bs-parent="#therapyAccordion">
-                            <div class="accordion-body">
-                                Specialized care focused on developmental challenges, learning disabilities, and
-                                adolescent emotional issues.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour">
-                                Stress Management
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#therapyAccordion">
-                            <div class="accordion-body">
-                                Tools and techniques like CBT, relaxation, and biofeedback to manage day-to-day stress
-                                effectively.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive">
-                                Addiction Counselling
-                            </button>
-                        </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#therapyAccordion">
-                            <div class="accordion-body">
-                                Evidence-based counseling to address substance abuse, behavioral addictions, and relapse
-                                prevention.
+                </div>
+                <!-- Member 3 -->
+                <div class="col-md-4">
+                    <div class="team-card">
+                        <div class="yellow-bg"></div>
+                        <img src="assets/team_03-removebg-preview.png" alt="Paul Carter" class="img-fluid" />
+                        <div class="team-info">
+                            <h5>PAUL CARTER</h5>
+                            <div class="underline"></div>
+                            <p>Support Manager</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Right: Therapy Process -->
-            <div class="col-md-6">
-                <h4 class="section-title">Psychology</h4>
-                <p>
-                    Psychology ( Already existing content on site)
-                    <br>
-                    ● Psychological Assessment
-                    <br>
-                    ● Psychotherapy and Counselling
-                    <br>
-                    ● Child and Adolescent Service
-                    <br>
-                    ● Stress Management
-                    <br>
-                    ● Addiction Counselling
+    <!-- Section 1 -->
+    <section>
+        <div class="container">
+            <div class="circle-group" style="height: 300px;">
+                <div class="circle big">
+                    <img src="assets/wellnes1.png" alt="Therapy" />
+                </div>
+                <div class="circle medium">
+                    <img src="assets/clinical2.png" alt="Group" />
+                </div>
+                <div class="circle small">
+                    <img src="assets/wellnes2.png" alt="Happy" />
+                </div>
+                <div class="decorative one"></div>
+                <div class="decorative two"></div>
+            </div>
+            <h2>Online Therapy Programs</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <div class="medsec-wrapper">
+        <div class="medsec-flexbox">
+            <!-- Images and Years Experience -->
+            <div class="medsec-images">
+                <div class="medsec-imgcard">
+                    <img src="assets/welness-consulting-services.webp" alt="Doctor" />
+                </div>
+                <div class="medsec-imgcard">
+                    <img src="assets/wellnes2.png" alt="Doctor" />
+                    <div class="medsec-years">
+                        15+ <span>Years Experience</span>
+                    </div>
+                </div>
+            </div>
 
-                </p>
+            <!-- Text Content -->
+            <div class="medsec-content">
+                <h2>The Great Place of Medical Hospital Center.</h2>
                 <p>
-                    Our team provides psychiatric evaluations, emotional support, and integrates with medical
-                    professionals to ensure comprehensive mental care. We also train hospital staff and offer
-                    consultations to improve recovery time and overall health outcomes.
+                    Maecenas rhoncus sapien eu felis consectetur tempor. Vivamus non euismod justo, vitae fringilla
+                    ligula. Pellentesque id elementum sem. Curabitur id nunc mi.
                 </p>
+                <div class="medsec-stats">
+                    <div class="medsec-statitem">
+                        <div class="medsec-staticon">😊</div>
+                        <div class="medsec-stattext">
+                            <strong>500+</strong>
+                            Happy Clients
+                        </div>
+                    </div>
+                    <div class="medsec-statitem">
+                        <div class="medsec-staticon">✔️</div>
+                        <div class="medsec-stattext">
+                            <strong>430+</strong>
+                            Project Done
+                        </div>
+                    </div>
+                </div>
+                <div class="medsec-feature">
+                    <p>
+                        <strong>Amet minim mollit non</strong><br />
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-       <!-- Footer Section -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -405,10 +621,6 @@
             </div><!-- /.footer-bottom -->
         </div>
     </footer>
-
-    <!-- Bootstrap JS + Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
 </body>
