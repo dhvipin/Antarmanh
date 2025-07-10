@@ -19,10 +19,7 @@
      font-style: normal;
  }
 
- body p {
-     text-align: justify;
-     /* word-spacing: 4px; */
- }
+
 
  .navbar {
      background-color: white;
@@ -140,6 +137,7 @@
  .nav-item {
      /* background-color: #0d6efd; */
      margin: auto 60px;
+     
      /* background-color: #00bcd4; */
      /* justify-content: space-between; */
  }
@@ -414,6 +412,9 @@
  .card-body {
      padding: 25px;
  }
+ .card-body i{
+    font-size: 30px;
+ }
 
  .card-title {
      color: var(--primary-color);
@@ -636,7 +637,9 @@
      border: 5px solid white;
      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
  }
-
+.video-wrapper:hover{
+ transform: scale(1.1);
+}
  .icon-tag {
      display: inline-flex;
      align-items: center;
@@ -1165,38 +1168,45 @@
      object-fit: cover;
      height: 100%;
  }
+.experience-section {
+    background-color: #f7faf4;
+}
 
- /* Try today Section css  */
- .experience-section {
-     background-color: #f7faf4;
- }
+.experience-card {
+    border: none;
+    border-radius: 12px;
+    padding: 30px 20px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
 
- .experience-card {
-     border: none;
-     border-radius: 12px;
-     padding: 30px 20px;
-     height: 60%;
-     background: #fff;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
- }
+.experience-card:hover {
+    transform: translateY(-5px);
+}
 
- .icon {
-     width: 50px;
-     height: 50px;
-     object-fit: contain;
-     filter: brightness(0) saturate(100%) invert(40%) sepia(72%) saturate(560%) hue-rotate(75deg) brightness(96%) contrast(91%);
- }
+.icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(-20deg) saturate(600%) brightness(90%) contrast(95%);
+}
 
- .card-title {
-     font-size: 18px;
-     font-weight: 500;
-     color: #1c2a2e;
- }
+/* Specifically color-tinted for #a94a82 */
+.icon {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(12%) saturate(1794%) hue-rotate(292deg) brightness(90%) contrast(89%);
+}
 
- .card-text {
-     font-size: 14px;
-     color: #889196;
- }
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1c2a2e;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #889196;
+}
 
  /* About page all css here  */
 
@@ -1259,6 +1269,9 @@
      border: 5px solid var(--accent-color);
      margin: 0 auto 20px;
  }
+ .team-img:hover {
+  transform: scale(1.1); /* zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
  .social-icons a {
      color: var(--text-color);
