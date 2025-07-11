@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Education | Psychology Network</title>
+
+    <!-- Bootstrap + Icons + Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9fb;
+        }
+
+        .edu-hero {
+            background: linear-gradient(rgba(169, 74, 130, 0.85), rgba(169, 74, 130, 0.85)),
+                url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .edu-title {
+            font-weight: 700;
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .edu-card {
+            border: none;
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .edu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .edu-card img {
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            height: 180px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .edu-feature {
+            padding: 25px;
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .edu-feature:hover {
+            transform: translateY(-4px);
+        }
+
+        .edu-icon {
+            font-size: 32px;
+            color: #a94a82;
+            margin-bottom: 15px;
+        }
+
+        .edu-testimonial {
+            background: linear-gradient(rgba(169, 74, 130, 0.85), rgba(169, 74, 130, 0.85));
+            color: white;
+            padding: 60px 30px;
+            border-radius: 20px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .edu-cta {
+            background: #fff;
+            padding: 60px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .edu-footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 30px 0;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <section class="edu-hero">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Psychology Education & Learning</h1>
+            <p class="lead">Explore certified workshops, wellness courses, and expert-led programs designed for lifelong
+                learners.</p>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="container my-5">
+        <h2 class="edu-title text-center">Top Programs</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="edu-card">
+                    <img src="assets/educa-im2.jpg" alt="CBT">
+                    <div class="p-4">
+                        <h5 class="text-primary">CBT Foundations</h5>
+                        <p>Learn CBT tools and how to apply them in therapy practice.</p>
+                        <p class="text-muted"><i class="bi bi-clock"></i> 4 Weeks · Certificate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="edu-card">
+                    <img src="assets/educat-img2.jpg" alt="Emotional Intelligence">
+                    <div class="p-4">
+                        <h5 class="text-primary">Emotional Intelligence</h5>
+                        <p>Train your empathy, awareness, and people skills.</p>
+                        <p class="text-muted"><i class="bi bi-clock"></i> 3 Weeks · Live Online</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="edu-card">
+                    <img src="assets/educt-img1.jpg" alt="Trauma Healing">
+                    <div class="p-4">
+                        <h5 class="text-primary">Trauma & Resilience</h5>
+                        <p>Handle trauma with informed, ethical, scientific care.</p>
+                        <p class="text-muted"><i class="bi bi-clock"></i> 6 Weeks · Expert-led</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Features -->
+    <section class="container my-5">
+        <h2 class="edu-title text-center">Why Learn With Us?</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="edu-feature">
+                    <i class="bi bi-award edu-icon"></i>
+                    <h6>Certified Programs</h6>
+                    <p>Led by licensed psychologists & institutions.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="edu-feature">
+                    <i class="bi bi-tv edu-icon"></i>
+                    <h6>Live + Recorded</h6>
+                    <p>Attend anytime with lifetime access.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="edu-feature">
+                    <i class="bi bi-chat-dots edu-icon"></i>
+                    <h6>Interactive Learning</h6>
+                    <p>Quizzes, peer groups, feedback forums.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="edu-feature">
+                    <i class="bi bi-globe2 edu-icon"></i>
+                    <h6>Global Access</h6>
+                    <p>Join from anywhere in the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lecture Demo -->
+    <section class="container my-5 text-center">
+        <h2 class="edu-title">Free Demo Lecture</h2>
+        <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
+            <iframe src="https://www.youtube.com/embed/_yhmAt5Rbs4" title="Demo Lecture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="container my-5 edu-testimonial">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="edu-title text-white">Real Student Feedback</h2>
+                <blockquote class="blockquote">
+                    <p>“Every module was clear, deep, and empowering. I now use CBT and trauma tools confidently in my
+                        practice.”</p>
+                    <footer class="blockquote-footer text-white mt-2">Ravina Malhotra, Clinical Intern</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" class="img-fluid rounded"
+                    alt="Student" style="max-height: 280px;" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="container my-5 edu-cta">
+        <h2>Stay Informed About New Courses</h2>
+        <p class="mb-4">Get updates on upcoming workshops, guest lectures, and certifications.</p>
+        <form class="row g-3 justify-content-center">
+            <div class="col-md-4">
+                <input type="email" class="form-control" placeholder="Your email" required>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-dark w-100">Subscribe</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="edu-footer">
+        &copy; 2025 Psychology Network. All rights reserved.
+    </footer>
+
+    <!-- JS -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Thanks for subscribing! You'll get course updates soon.");
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
