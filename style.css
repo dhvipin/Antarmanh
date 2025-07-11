@@ -137,7 +137,7 @@
  .nav-item {
      /* background-color: #0d6efd; */
      margin: auto 60px;
-     
+
      /* background-color: #00bcd4; */
      /* justify-content: space-between; */
  }
@@ -412,8 +412,9 @@
  .card-body {
      padding: 25px;
  }
- .card-body i{
-    font-size: 30px;
+
+ .card-body i {
+     font-size: 30px;
  }
 
  .card-title {
@@ -637,9 +638,11 @@
      border: 5px solid white;
      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
  }
-.video-wrapper:hover{
- transform: scale(1.1);
-}
+
+ .video-wrapper:hover {
+     transform: scale(1.1);
+ }
+
  .icon-tag {
      display: inline-flex;
      align-items: center;
@@ -1168,45 +1171,46 @@
      object-fit: cover;
      height: 100%;
  }
-.experience-section {
-    background-color: #f7faf4;
-}
 
-.experience-card {
-    border: none;
-    border-radius: 12px;
-    padding: 30px 20px;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
+ .experience-section {
+     background-color: #f7faf4;
+ }
 
-.experience-card:hover {
-    transform: translateY(-5px);
-}
+ .experience-card {
+     border: none;
+     border-radius: 12px;
+     padding: 30px 20px;
+     background: #fff;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+     transition: transform 0.3s ease;
+ }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(-20deg) saturate(600%) brightness(90%) contrast(95%);
-}
+ .experience-card:hover {
+     transform: translateY(-5px);
+ }
 
-/* Specifically color-tinted for #a94a82 */
-.icon {
-    filter: brightness(0) saturate(100%) invert(23%) sepia(12%) saturate(1794%) hue-rotate(292deg) brightness(90%) contrast(89%);
-}
+ .icon {
+     width: 50px;
+     height: 50px;
+     object-fit: contain;
+     filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(-20deg) saturate(600%) brightness(90%) contrast(95%);
+ }
 
-.card-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1c2a2e;
-}
+ /* Specifically color-tinted for #a94a82 */
+ .icon {
+     filter: brightness(0) saturate(100%) invert(23%) sepia(12%) saturate(1794%) hue-rotate(292deg) brightness(90%) contrast(89%);
+ }
 
-.card-text {
-    font-size: 14px;
-    color: #889196;
-}
+ .card-title {
+     font-size: 18px;
+     font-weight: 600;
+     color: #1c2a2e;
+ }
+
+ .card-text {
+     font-size: 14px;
+     color: #889196;
+ }
 
  /* About page all css here  */
 
@@ -1269,9 +1273,11 @@
      border: 5px solid var(--accent-color);
      margin: 0 auto 20px;
  }
+
  .team-img:hover {
-  transform: scale(1.1); /* zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
+     transform: scale(1.1);
+     /* zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }
 
  .social-icons a {
      color: var(--text-color);
@@ -1566,3 +1572,83 @@
      background: #f7cf3b;
      margin: 5px auto;
  }
+
+
+ /* collobarations page css here all  */
+
+  .collab-hero {
+            background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') center/cover no-repeat;
+            padding: 120px 0;
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+
+        .collab-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
+
+        .collab-hero .collab-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .collab-section-title {
+            font-weight: 700;
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .collab-card {
+            border: none;
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .collab-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .collab-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #f0f0f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 24px;
+        }
+
+        .collab-testimonial {
+            background: #eef2f6;
+            padding: 60px 30px;
+            border-radius: 20px;
+        }
+
+        .collab-btn {
+            background-color: #a94a82;
+            color: white;
+            border: none;
+        }
+
+        .collab-btn:hover {
+            background-color: #8c3b6a;
+        }
+
+        .collab-footer {
+            background: #f4f4f4;
+            padding: 30px 0;
+            text-align: center;
+            color: #666;
+        }
