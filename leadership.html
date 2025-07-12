@@ -4,17 +4,91 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Collaborate With Us | Psychology Network</title>
+    <title>Leadership | Psychology Network</title>
 
     <!-- Bootstrap & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfdfd;
+        }
+
+        .lead-hero {
+            background: linear-gradient(rgba(169, 74, 130, 0.9), rgba(169, 74, 130, 0.9)),
+                url('https://images.unsplash.com/photo-1581090700227-1e8eec5d9c0f?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .lead-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .lead-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: 0.3s;
+        }
+
+        .lead-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .lead-card img {
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .lead-card-body {
+            padding: 20px;
+        }
+
+        .lead-quote {
+            background-color: #f9f9fb;
+            border-left: 4px solid #a94a82;
+            padding: 25px;
+            font-style: italic;
+            color: #333;
+        }
+
+        .lead-milestone {
+            background: #f1f1f1;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .lead-cta {
+            background: #fff;
+            padding: 60px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .lead-footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 30px 0;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- index.php  header part -->
+
+    <!-- index.php -->
 
     <div class="scroll-left">
         <p>The Manasthali helpline number has been temporarily paused. For appointments, please call or WhatsApp +91 -
@@ -109,7 +183,7 @@
 
                 <!-- Right side search icon -->
                 <!-- <div class="d-flex icon">
-                    <a href="#" class="nav-link search-icon ">
+                    <a href="#" class="nav-link ico">
                         <i class="bi bi-search search-icon"></i>
                     </a>
                 </div> -->
@@ -119,126 +193,115 @@
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
     <!-- Hero Section -->
-    <section class="collab-hero">
-        <div class="container collab-content">
-            <h1 class="display-5 fw-bold">Collaborate with Us</h1>
-            <p class="lead">Together, we can transform mental health care.</p>
-            <a href="#collab-form" class="btn collab-btn btn-lg mt-3">Start Collaborating</a>
+    <section class="lead-hero">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Leadership at Psychology Network</h1>
+            <p class="lead">Driven by purpose. Grounded in science. Focused on mental wellness for all.</p>
         </div>
     </section>
 
-    <!-- Collaboration Types -->
+    <!-- Vision Section -->
     <section class="container my-5">
-        <h2 class="collab-section-title text-center">Who We Collaborate With</h2>
+        <h2 class="lead-title text-center">Our Vision</h2>
+        <p class="text-center mx-auto" style="max-width: 900px;">
+            At Psychology Network, leadership means compassion, clarity, and impact. Our leaders are licensed
+            psychologists, educators,
+            researchers, and changemakers guiding our work to improve mental health accessibility in India and beyond.
+        </p>
+    </section>
+
+    <!-- Leadership Cards -->
+    <section class="container my-5">
+        <h2 class="lead-title text-center">Meet Our Leaders</h2>
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="collab-card">
-                    <div class="collab-icon text-white bg-danger"><i class="bi bi-person-heart"></i></div>
-                    <h5>Mental Health Professionals</h5>
-                    <p>Join us in delivering professional support and expanding access to therapy.</p>
+                <div class="lead-card">
+                    <img src="assets/core-tream4.jpg" alt="Neha Verma">
+                    <div class="lead-card-body text-center">
+                        <h5>Dr. Neha Verma</h5>
+                        <p class="text-muted">Founder & Chief Clinical Officer</p>
+                        <p>Leading national efforts in trauma therapy, policy advocacy, and therapist education
+                            programs.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="collab-card">
-                    <div class="collab-icon text-white bg-primary"><i class="bi bi-journal-text"></i></div>
-                    <h5>Researchers</h5>
-                    <p>Partner on studies, data collection, and psychological innovation.</p>
+                <div class="lead-card">
+                    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Aakash Mehta">
+                    <div class="lead-card-body text-center">
+                        <h5>Dr. Aakash Mehta</h5>
+                        <p class="text-muted">Director of Research & Innovation</p>
+                        <p>Designs data-driven mental health solutions and research-backed curriculum for psychological
+                            education.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="collab-card">
-                    <div class="collab-icon text-white bg-success"><i class="bi bi-people-fill"></i></div>
-                    <h5>Community Groups</h5>
-                    <p>Co-create local programs, events, and education for mental well-being.</p>
+                <div class="lead-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Meera Saini">
+                    <div class="lead-card-body text-center">
+                        <h5>Meera Saini</h5>
+                        <p class="text-muted">Operations & Outreach Head</p>
+                        <p>Oversees community outreach, collaboration networks, and internship programs nationwide.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Collaborate -->
+    <!-- Quote Section -->
     <section class="container my-5">
-        <h2 class="collab-section-title text-center">Why Collaborate With Us?</h2>
-        <div class="row g-4 text-center">
-            <div class="col-md-4">
-                <div class="collab-card">
-                    <div class="collab-icon text-dark"><i class="bi bi-lightbulb"></i></div>
-                    <h5>Shared Expertise</h5>
-                    <p>Bring your skills into meaningful projects and contribute to change.</p>
+        <div class="lead-quote">
+            “We believe psychology must go beyond theory and reach the hearts of communities. Real leadership is rooted
+            in healing, inclusivity, and bold conversations.”
+            <br><strong>– Dr. Neha Verma</strong>
+        </div>
+    </section>
+
+    <!-- Milestones -->
+    <section class="container my-5">
+        <h2 class="lead-title text-center">Our Leadership Milestones</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="lead-milestone">
+                    <h6>2019</h6>
+                    <p>Founded with a mission to normalize mental health conversations in India.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="collab-card">
-                    <div class="collab-icon text-dark"><i class="bi bi-bar-chart-line"></i></div>
-                    <h5>Wider Reach</h5>
-                    <p>Access our large audience base and amplify your impact in the mental health field.</p>
+            <div class="col-md-6">
+                <div class="lead-milestone">
+                    <h6>2021</h6>
+                    <p>Launched national internship program & 200+ trained community therapists.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="collab-card">
-                    <div class="collab-icon text-dark"><i class="bi bi-stars"></i></div>
-                    <h5>Mutual Growth</h5>
-                    <p>Gain recognition, growth opportunities, and support from our network.</p>
+            <div class="col-md-6">
+                <div class="lead-milestone">
+                    <h6>2023</h6>
+                    <p>Partnered with universities to introduce research-driven mental health education modules.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="lead-milestone">
+                    <h6>2024</h6>
+                    <p>Launched digital therapy platform with over 10,000 sessions conducted.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="container my-5 collab-testimonial">
-        <h2 class="collab-section-title text-center">Success Stories</h2>
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <blockquote class="blockquote">
-                    <p>“Partnering with Psychology Network gave me a platform to reach more clients and collaborate with
-                        other professionals.”</p>
-                    <footer class="blockquote-footer mt-3">Dr. Neha Kapoor, Psychologist</footer>
-                </blockquote>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="assets/happy-successful-businessman.jpg" class="img-fluid rounded" alt="Success Story" />
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="container my-5" id="collab-form">
-        <h2 class="collab-section-title text-center">Let’s Collaborate</h2>
-        <form class="row g-3">
-            <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Full Name" required>
-            </div>
-            <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Phone Number">
-            </div>
-            <div class="col-md-6">
-                <select class="form-select" required>
-                    <option value="">Select Your Role</option>
-                    <option>Therapist</option>
-                    <option>Researcher</option>
-                    <option>Volunteer</option>
-                    <option>Community Leader</option>
-                </select>
-            </div>
-            <div class="col-12">
-                <textarea class="form-control" rows="5" placeholder="Your message..."></textarea>
-            </div>
-            <div class="col-12 text-center">
-                <button type="submit" class="btn collab-btn px-4 py-2">Submit</button>
-            </div>
-        </form>
+    <!-- CTA -->
+    <section class="container my-5 lead-cta">
+        <h2>Connect with Our Core Team</h2>
+        <p>Want to collaborate, invite us for speaking events, or partner with our programs?</p>
+        <a href="/Collaboration.html" class="btn btn-dark btn-lg mt-3">Contact Us</a>
     </section>
 
     <!-- Footer -->
-    <footer class="collab-footer">
+    <footer class="lead-footer">
         &copy; 2025 Psychology Network. All rights reserved.
     </footer>
 
-    <!-- Footer -->
     <!-- Footer -->
     <footer class="footer">
         <div class=" footer-mask">
@@ -359,22 +422,7 @@
         </div>
     </footer>
 
-    <!-- <a class="btn btn-scoll-up color-secondary" id="btn-scroll-up"></a> -->
 
-    <!-- Bootstrap JS + Icons -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-
-    <!-- JS -->
-    <script>
-        document.querySelector("form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Thanks for connecting with us! We'll contact you soon.");
-            this.reset();
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
