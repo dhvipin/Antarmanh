@@ -1576,79 +1576,326 @@
 
  /* collobarations page css here all  */
 
-  .collab-hero {
-            background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') center/cover no-repeat;
-            padding: 120px 0;
-            color: white;
-            position: relative;
-            text-align: center;
-        }
+ .collab-hero {
+     background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') center/cover no-repeat;
+     padding: 120px 0;
+     color: white;
+     position: relative;
+     text-align: center;
+ }
 
-        .collab-hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-color: rgba(0, 0, 0, 0.4);
-            z-index: 0;
-        }
+ .collab-hero::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background-color: rgba(0, 0, 0, 0.4);
+     z-index: 0;
+ }
 
-        .collab-hero .collab-content {
-            position: relative;
-            z-index: 1;
-        }
+ .collab-hero .collab-content {
+     position: relative;
+     z-index: 1;
+ }
 
-        .collab-section-title {
-            font-weight: 700;
-            font-size: 2.4rem;
-            margin-bottom: 40px;
-            color: #333;
-        }
+ .collab-section-title {
+     font-weight: 700;
+     font-size: 2.4rem;
+     margin-bottom: 40px;
+     color: #333;
+ }
 
-        .collab-card {
-            border: none;
-            border-radius: 16px;
-            background: #fff;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-            padding: 30px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
+ .collab-card {
+     border: none;
+     border-radius: 16px;
+     background: #fff;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+     padding: 30px;
+     text-align: center;
+     transition: transform 0.3s ease;
+ }
 
-        .collab-card:hover {
-            transform: translateY(-5px);
-        }
+ .collab-card:hover {
+     transform: translateY(-5px);
+ }
 
-        .collab-icon {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #f0f0f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 15px;
-            font-size: 24px;
-        }
+ .collab-icon {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     background-color: #f0f0f5;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto 15px;
+     font-size: 24px;
+ }
 
-        .collab-testimonial {
-            background: #eef2f6;
-            padding: 60px 30px;
-            border-radius: 20px;
-        }
+ .collab-testimonial {
+     background: #eef2f6;
+     padding: 60px 30px;
+     border-radius: 20px;
+ }
 
-        .collab-btn {
-            background-color: #a94a82;
-            color: white;
-            border: none;
-        }
+ .collab-btn {
+     background-color: #a94a82;
+     color: white;
+     border: none;
+ }
 
-        .collab-btn:hover {
-            background-color: #8c3b6a;
-        }
+ .collab-btn:hover {
+     background-color: #8c3b6a;
+ }
 
-        .collab-footer {
-            background: #f4f4f4;
-            padding: 30px 0;
-            text-align: center;
-            color: #666;
-        }
+ .collab-footer {
+     background: #f4f4f4;
+     padding: 30px 0;
+     text-align: center;
+     color: #666;
+ }
+
+
+ /* Leadership all css is here  */
+
+ .lead-hero {
+     background: linear-gradient(rgba(169, 74, 130, 0.9), rgba(169, 74, 130, 0.9)),
+         url('https://images.unsplash.com/photo-1581090700227-1e8eec5d9c0f?auto=format&fit=crop&w=1650&q=80') center/cover no-repeat;
+     color: white;
+     padding: 120px 0;
+     text-align: center;
+ }
+
+ .lead-title {
+     font-size: 2.5rem;
+     font-weight: 700;
+     margin-bottom: 40px;
+ }
+
+ .lead-card {
+     background: #fff;
+     border-radius: 16px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+     transition: 0.3s;
+ }
+
+ .lead-card:hover {
+     transform: translateY(-5px);
+ }
+
+ .lead-card img {
+     border-top-left-radius: 16px;
+     border-top-right-radius: 16px;
+     width: 100%;
+     height: 280px;
+     object-fit: cover;
+ }
+
+ .lead-card-body {
+     padding: 20px;
+ }
+
+ .lead-quote {
+     background-color: #f9f9fb;
+     border-left: 4px solid #a94a82;
+     padding: 25px;
+     font-style: italic;
+     color: #333;
+ }
+
+ .lead-milestone {
+     background: #f1f1f1;
+     padding: 20px;
+     border-radius: 12px;
+     margin-bottom: 20px;
+ }
+
+ .lead-cta {
+     background: #fff;
+     padding: 60px;
+     border-radius: 20px;
+     text-align: center;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+ }
+
+ .lead-footer {
+     background: #f4f4f4;
+     text-align: center;
+     padding: 30px 0;
+     color: #777;
+ }
+
+
+ /* Project perspective all css is heree   */
+
+ .pph-hero {
+     background: linear-gradient(rgba(169, 74, 130, 0.9), rgba(169, 74, 130, 0.9)),
+         url('https://images.unsplash.com/photo-1516822003754-cca485356ecb') center/cover no-repeat;
+     color: white;
+     padding: 120px 0;
+     text-align: center;
+ }
+
+ .pph-title {
+     font-size: 2.5rem;
+     font-weight: 700;
+ }
+
+ .pph-section {
+     padding: 60px 0;
+ }
+
+ .pph-pillars .card {
+     border: none;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ }
+
+ .pph-impact {
+     background: #4e2d4d;
+     color: white;
+     padding: 40px 0;
+ }
+
+ .pph-impact .col {
+     text-align: center;
+ }
+
+ .pph-workshops .card img {
+     height: 220px;
+     object-fit: cover;
+ }
+
+ .pph-footer {
+     background: #f4f4f4;
+     text-align: center;
+     padding: 30px 0;
+ }
+
+
+
+
+ /* Education page all csss is here  */
+
+ .edu-hero {
+     background: linear-gradient(rgba(169, 74, 130, 0.85), rgba(169, 74, 130, 0.85)),
+         url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+     color: white;
+     padding: 120px 0;
+     text-align: center;
+ }
+
+ .edu-title {
+     font-weight: 700;
+     font-size: 2.4rem;
+     margin-bottom: 40px;
+     color: #333;
+ }
+
+ .edu-card {
+     border: none;
+     border-radius: 16px;
+     background: #fff;
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+     transition: transform 0.3s ease;
+ }
+
+ .edu-card:hover {
+     transform: translateY(-5px);
+ }
+
+ .edu-card img {
+     border-top-left-radius: 16px;
+     border-top-right-radius: 16px;
+     height: 180px;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ .edu-feature {
+     padding: 25px;
+     border-radius: 16px;
+     background: #fff;
+     box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+     text-align: center;
+     transition: 0.3s;
+ }
+
+ .edu-feature:hover {
+     transform: translateY(-4px);
+ }
+
+ .edu-icon {
+     font-size: 32px;
+     color: #a94a82;
+     margin-bottom: 15px;
+ }
+
+ .edu-testimonial {
+     background: linear-gradient(rgba(169, 74, 130, 0.85), rgba(169, 74, 130, 0.85));
+     color: white;
+     padding: 60px 30px;
+     border-radius: 20px;
+     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+ }
+
+ .edu-cta {
+     background: #fff;
+     padding: 60px;
+     border-radius: 16px;
+     text-align: center;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+ }
+
+ .edu-footer {
+     background: #f4f4f4;
+     text-align: center;
+     padding: 30px 0;
+     color: #777;
+ }
+
+
+ /* Atmsandhan all css is here  */
+
+ .atms-hero {
+     background: linear-gradient(rgba(36, 13, 77, 0.85), rgba(36, 13, 77, 0.85)),
+         url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5') center/cover no-repeat;
+     padding: 120px 0;
+     color: white;
+     text-align: center;
+ }
+
+ .atms-title {
+     font-size: 2.8rem;
+     font-weight: 700;
+ }
+
+ .atms-section {
+     padding: 60px 0;
+ }
+
+ .atms-card {
+     border: none;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+     border-radius: 16px;
+     overflow: hidden;
+     transition: 0.3s;
+ }
+
+ .atms-card:hover {
+     transform: translateY(-5px);
+ }
+
+ .atms-card img {
+     height: 220px;
+     object-fit: cover;
+ }
+
+ .atms-footer {
+     background: #222;
+     color: #aaa;
+     padding: 40px 0;
+     text-align: center;
+ }
+
+ .atms-icon {
+     font-size: 2rem;
+     color: #6f42c1;
+ }
