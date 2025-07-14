@@ -1,31 +1,31 @@
 
-    const toggler = document.querySelector('.custom-toggler');
-    const closeBtn = document.querySelector('.navbar-close');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
+    // const toggler = document.querySelector('.custom-toggler');
+    // const closeBtn = document.querySelector('.navbar-close');
+    // const navbarCollapse = document.querySelector('.navbar-collapse');
 
-    toggler.addEventListener('click', () => {
-        navbarCollapse.classList.add('show');
-        toggler.style.display = 'none';
-        closeBtn.style.display = 'block';
-    });
+    // toggler.addEventListener('click', () => {
+    //     navbarCollapse.classList.add('show');
+    //     toggler.style.display = 'none';
+    //     closeBtn.style.display = 'block';
+    // });
 
-    closeBtn.addEventListener('click', () => {
-        navbarCollapse.classList.remove('show');
-        toggler.style.display = 'block';
-        closeBtn.style.display = 'none';
-    });
+    // closeBtn.addEventListener('click', () => {
+    //     navbarCollapse.classList.remove('show');
+    //     toggler.style.display = 'block';
+    //     closeBtn.style.display = 'none';
+    // });
 
-    // For dropdown toggle on small screens
-    const dropdownLinks = document.querySelectorAll('.nav-item.dropdown > a');
-    dropdownLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            if (window.innerWidth < 992) {
-                e.preventDefault();
-                const dropdownMenu = this.nextElementSibling;
-                dropdownMenu.classList.toggle('show');
-            }
-        });
-    });
+    // // For dropdown toggle on small screens
+    // const dropdownLinks = document.querySelectorAll('.nav-item.dropdown > a');
+    // dropdownLinks.forEach(link => {
+    //     link.addEventListener('click', function (e) {
+    //         if (window.innerWidth < 992) {
+    //             e.preventDefault();
+    //             const dropdownMenu = this.nextElementSibling;
+    //             dropdownMenu.classList.toggle('show');
+    //         }
+    //     });
+    // });
 
 
 
