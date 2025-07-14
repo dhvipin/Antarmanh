@@ -1855,7 +1855,7 @@
  /* Atmsandhan all css is here  */
 
  .atms-hero {
-     background: linear-gradient(rgba(36, 13, 77, 0.85), rgba(36, 13, 77, 0.85)),
+     background:linear-gradient(rgba(169, 74, 130, 0.85), rgba(169, 74, 130, 0.85)),
          url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5') center/cover no-repeat;
      padding: 120px 0;
      color: white;
@@ -1898,4 +1898,87 @@
  .atms-icon {
      font-size: 2rem;
      color: #6f42c1;
+ }
+
+
+
+
+ /* Core team page css all is here  */
+ .team-hero {
+     background: linear-gradient(rgba(169, 74, 130, 0.85), rgba(169, 74, 130, 0.85)),
+         url('https://images.unsplash.com/photo-1587614382346-4ec6c2e35b32?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+     color: white;
+     padding: 100px 0;
+     text-align: center;
+ }
+
+ .team-section-title {
+     font-weight: 700;
+     font-size: 2.4rem;
+     margin-bottom: 40px;
+     color: #333;
+ }
+
+ .team-card {
+     border: none;
+     border-radius: 16px;
+     overflow: hidden;
+     background: #fff;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+     transition: all 0.3s ease;
+ }
+
+ .team-card:hover {
+     transform: translateY(-6px);
+ }
+
+ .team-card img {
+     height: 320px;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ .team-card-body {
+     padding: 20px;
+ }
+
+ .team-name {
+     font-size: 1.3rem;
+     font-weight: 600;
+ }
+
+ .team-role {
+     color: #a94a82;
+     font-weight: 500;
+     margin-bottom: 10px;
+ }
+
+ .team-social a {
+     color: #666;
+     font-size: 18px;
+     margin: 0 6px;
+ }
+
+ .team-social a:hover {
+     color: #a94a82;
+ }
+
+ .team-values i {
+     font-size: 32px;
+     color: #a94a82;
+     margin-bottom: 10px;
+ }
+
+ .team-cta {
+     background: #fff;
+     padding: 60px;
+     border-radius: 20px;
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+ }
+
+ .team-footer {
+     background: #f1f1f1;
+     text-align: center;
+     padding: 30px 0;
+     color: #777;
  }
