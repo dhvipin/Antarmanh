@@ -708,7 +708,7 @@
      padding: 0.8rem 2.5rem;
      border-radius: 50px;
      border: none;
-     box-shadow: 0 4px 15px rgba(249, 168, 38, 0.4);
+     box-shadow: 0 4px 15px rgba(46, 39, 26, 0.4);
      transition: all 0.3s ease;
      position: relative;
      overflow: hidden;
@@ -719,7 +719,7 @@
 
  .cta-btn:hover {
      transform: translateY(-3px);
-     box-shadow: 0 6px 20px rgba(249, 168, 38, 0.6);
+     box-shadow: 0 6px 20px rgba(254, 222, 170, 0.6);
      color: white;
  }
 
@@ -1982,3 +1982,132 @@
      padding: 30px 0;
      color: #777;
  }
+
+
+
+ /* wellnesss page all csss here  */
+
+
+
+      
+        .misc-card {
+            transition: 0.3s;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .misc-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .misc-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .misc-icon {
+            font-size: 2.5rem;
+            color:var(--primary-color);
+        }
+
+        .misc-footer {
+            background: #111;
+            color: #ccc;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .info-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+
+
+        /* Miscellaneous | Psychology Network  page csss alll is herer */
+
+          .misc-hero {
+            background: linear-gradient(rgba(10, 10, 50, 0.7), rgba(10, 10, 50, 0.7)),
+                url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+        }
+
+        .misc-hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .misc-section {
+            padding: 60px 0;
+        }
+
+        .misc-card {
+            transition: 0.3s;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .misc-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .misc-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .misc-icon {
+            font-size: 2.5rem;
+            color: #7952b3;
+        }
+
+        .misc-footer {
+            background: #111;
+            color: #ccc;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .quote-section {
+            background-color: #f1f3f5;
+            padding: 60px 0;
+        }
+
+        .quote-box {
+            font-style: italic;
+            border-left: 4px solid #7952b3;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .testimonials {
+            background: #fff;
+            padding: 60px 0;
+        }
+
+        .testimonial {
+            border-left: 4px solid #28a745;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
