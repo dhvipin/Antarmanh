@@ -1749,7 +1749,7 @@
  }
 
  .pph-impact {
-     background:var(--primary-color);
+     background: var(--primary-color);
      color: white;
      padding: 40px 0;
  }
@@ -1855,7 +1855,7 @@
  /* Atmsandhan all css is here  */
 
  .atms-hero {
-     background:linear-gradient(rgba(169, 74, 130, 0.85), rgba(169, 74, 130, 0.85)),
+     background: linear-gradient(rgba(169, 74, 130, 0.85), rgba(169, 74, 130, 0.85)),
          url('https://images.unsplash.com/photo-1557682224-5b8590cd9ec5') center/cover no-repeat;
      padding: 120px 0;
      color: white;
@@ -1989,125 +1989,125 @@
 
 
 
-      
-        .misc-card {
-            transition: 0.3s;
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        }
 
-        .misc-card:hover {
-            transform: translateY(-5px);
-        }
+ .misc-card {
+     transition: 0.3s;
+     border: none;
+     border-radius: 15px;
+     overflow: hidden;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+ }
 
-        .misc-card img {
-            height: 200px;
-            object-fit: cover;
-        }
+ .misc-card:hover {
+     transform: translateY(-5px);
+ }
 
-        .misc-icon {
-            font-size: 2.5rem;
-            color:var(--primary-color);
-        }
+ .misc-card img {
+     height: 200px;
+     object-fit: cover;
+ }
 
-        .misc-footer {
-            background: #111;
-            color: #ccc;
-            padding: 40px 0;
-            text-align: center;
-        }
+ .misc-icon {
+     font-size: 2.5rem;
+     color: var(--primary-color);
+ }
 
-        .info-icon {
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
+ .misc-footer {
+     background: #111;
+     color: #ccc;
+     padding: 40px 0;
+     text-align: center;
+ }
 
-        .info-card {
-            background-color: #fff;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: all 0.3s ease-in-out;
-        }
+ .info-icon {
+     font-size: 2rem;
+     color: var(--primary-color);
+     margin-bottom: 10px;
+ }
 
-        .info-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-        }
+ .info-card {
+     background-color: #fff;
+     border-radius: 12px;
+     padding: 30px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     text-align: center;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .info-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+ }
 
 
 
-        /* Miscellaneous | Psychology Network  page csss alll is herer */
+ /* Miscellaneous | Psychology Network  page csss alll is herer */
 
-          .misc-hero {
-            background: linear-gradient(rgba(10, 10, 50, 0.7), rgba(10, 10, 50, 0.7)),
-                url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 120px 0;
-        }
+ .misc-hero {
+     background: linear-gradient(rgba(161, 102, 137, 0.9), rgba(254, 191, 228, 0.326)),
+         url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1') center/cover no-repeat;
+     color: white;
+     text-align: center;
+     padding: 120px 0;
+ }
 
-        .misc-hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
+ .misc-hero h1 {
+     font-size: 3rem;
+     font-weight: bold;
+ }
 
-        .misc-section {
-            padding: 60px 0;
-        }
+ .misc-section {
+     padding: 60px 0;
+ }
 
-        .misc-card {
-            transition: 0.3s;
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        }
+ .misc-card {
+     transition: 0.3s;
+     border: none;
+     border-radius: 15px;
+     overflow: hidden;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+ }
 
-        .misc-card:hover {
-            transform: translateY(-5px);
-        }
+ .misc-card:hover {
+     transform: translateY(-5px);
+ }
 
-        .misc-card img {
-            height: 200px;
-            object-fit: cover;
-        }
+ .misc-card img {
+     height: 200px;
+     object-fit: cover;
+ }
 
-        .misc-icon {
-            font-size: 2.5rem;
-            color: #7952b3;
-        }
+ .misc-icon {
+     font-size: 2.5rem;
+     color: #7952b3;
+ }
 
-        .misc-footer {
-            background: #111;
-            color: #ccc;
-            padding: 40px 0;
-            text-align: center;
-        }
+ .misc-footer {
+     background: #111;
+     color: #ccc;
+     padding: 40px 0;
+     text-align: center;
+ }
 
-        .quote-section {
-            background-color: #f1f3f5;
-            padding: 60px 0;
-        }
+ .quote-section {
+     background-color: #f1f3f5;
+     padding: 60px 0;
+ }
 
-        .quote-box {
-            font-style: italic;
-            border-left: 4px solid #7952b3;
-            padding-left: 20px;
-            margin-bottom: 30px;
-        }
+ .quote-box {
+     font-style: italic;
+     border-left: 4px solid #7952b3;
+     padding-left: 20px;
+     margin-bottom: 30px;
+ }
 
-        .testimonials {
-            background: #fff;
-            padding: 60px 0;
-        }
+ .testimonials {
+     background: #fff;
+     padding: 60px 0;
+ }
 
-        .testimonial {
-            border-left: 4px solid #28a745;
-            padding-left: 20px;
-            margin-bottom: 30px;
-        }
+ .testimonial {
+     border-left: 4px solid #28a745;
+     padding-left: 20px;
+     margin-bottom: 30px;
+ }
