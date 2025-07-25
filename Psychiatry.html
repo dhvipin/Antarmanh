@@ -4,17 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Education | Psychology Network</title>
-
-    <!-- Bootstrap + Icons + Fonts -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Psychiatry Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+
 
     <!-- index.php -->
 
@@ -62,11 +59,11 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="Clinical.html">Clinical</a>
+                                <a class="dropdown-item" href="">Clinical</a>
                                 <ul class="dropdown-menu submenu">
-                                    <li><a class="dropdown-item" href="#">Psychiatry</a></li>
-                                    <li><a class="dropdown-item" href="#">Psychology</a></li>
-                                    <li><a class="dropdown-item" href="#">Laison</a></li>
+                                    <li><a class="dropdown-item" href="Psychiatry.html">Psychiatry</a></li>
+                                    <li><a class="dropdown-item" href="Psychology.html">Psychology</a></li>
+                                    <li><a class="dropdown-item" href="Laison.html">Laison</a></li>
                                     <!-- <li>
                                         <a class="dropdown-item" href="#">More Clinical</a>
                                         <ul class="dropdown-menu submenu">
@@ -77,7 +74,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="education.html">Educations</a>
+                                <a class="dropdown-item" href="">Educations</a>
                                 <ul class="dropdown-menu submenu">
                                     <li><a class="dropdown-item" href="#">Awareness</a></li>
                                     <li><a class="dropdown-item" href="#">Trainings</a></li>
@@ -85,7 +82,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="Wellness.html">Wellness</a>
+                                <a class="dropdown-item" href="">Wellness</a>
                                 <ul style="height: 120px;" class="dropdown-menu  submenu">
                                     <li><a class="dropdown-item" href="#">Integrative Wellness </a></li>
                                     <li><a class="dropdown-item" href="#">MAYA</a></li>
@@ -106,6 +103,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="Miscellaneous.html">Miscellaneous</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="About.html">About Us</a>
                     </li>
                 </ul>
@@ -122,132 +123,174 @@
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
-    <!-- Hero -->
-    <section class="edu-hero">
-        <div class="container">
-            <h1 class="display-5 fw-bold">Psychology Education & Learning</h1>
-            <p class="lead">Explore certified workshops, wellness courses, and expert-led programs designed for lifelong
-                learners.</p>
+    <!-- Hero Section -->
+    <section class="hero-section-about  ">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Psychiatry मन:स्थली</h1>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item active text-white">Psychiatry therapies</li>
+                </ol>
+            </nav>
         </div>
     </section>
 
-    <!-- Courses -->
-    <section class="container my-5">
-        <h2 class="edu-title text-center">Top Programs</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="edu-card">
-                    <img src="assets/educa-im2.jpg" alt="CBT">
-                    <div class="p-4">
-                        <h5 class="text-primary">CBT Foundations</h5>
-                        <p>Learn CBT tools and how to apply them in therapy practice.</p>
-                        <p class="text-muted"><i class="bi bi-clock"></i> 4 Weeks · Certificate</p>
-                    </div>
-                </div>
+    <div class="container py-5">
+
+        <!-- Top Row with 2 Images -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-6 img-col">
+                <img src="assets/clinical1.png" alt="Image 1" class="img-fluid">
             </div>
-            <div class="col-md-4">
-                <div class="edu-card">
-                    <img src="assets/educat-img2.jpg" alt="Emotional Intelligence">
-                    <div class="p-4">
-                        <h5 class="text-primary">Emotional Intelligence</h5>
-                        <p>Train your empathy, awareness, and people skills.</p>
-                        <p class="text-muted"><i class="bi bi-clock"></i> 3 Weeks · Live Online</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="edu-card">
-                    <img src="assets/educt-img1.jpg" alt="Trauma Healing">
-                    <div class="p-4">
-                        <h5 class="text-primary">Trauma & Resilience</h5>
-                        <p>Handle trauma with informed, ethical, scientific care.</p>
-                        <p class="text-muted"><i class="bi bi-clock"></i> 6 Weeks · Expert-led</p>
-                    </div>
-                </div>
+            <div class="col-md-6 img-col">
+                <img src="assets/clinical2.png" alt="Image 2" class="img-fluid">
             </div>
         </div>
-    </section>
 
-    <!-- Learning Features -->
-    <section class="container my-5">
-        <h2 class="edu-title text-center">Why Learn With Us?</h2>
-        <div class="row g-4">
-            <div class="col-md-3">
-                <div class="edu-feature">
-                    <i class="bi bi-award edu-icon"></i>
-                    <h6>Certified Programs</h6>
-                    <p>Led by licensed psychologists & institutions.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="edu-feature">
-                    <i class="bi bi-tv edu-icon"></i>
-                    <h6>Live + Recorded</h6>
-                    <p>Attend anytime with lifetime access.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="edu-feature">
-                    <i class="bi bi-chat-dots edu-icon"></i>
-                    <h6>Interactive Learning</h6>
-                    <p>Quizzes, peer groups, feedback forums.</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="edu-feature">
-                    <i class="bi bi-globe2 edu-icon"></i>
-                    <h6>Global Access</h6>
-                    <p>Join from anywhere in the world.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Section Title -->
+        <h2 class="section-title">Psychiatry</h2>
+        <p style="text-align: justify;">
+            Psychiatry - Psychiatric Disorders can range from mild anxiety issues to major psychosis
+            and the consequence of such issues leads to poor quality of personal, social as well as
+            physical health. At Manasthali, we ensure comprehensive understanding of the
+            psychiatric issues as per international classification of diseases to make a pragmatic
+            clinical diagnosis and follow a rational approach for management using medicines as
+            well as Psycho education. Clients and care givers are considered partners in treatment
+            and therefore emphasis is on transparency and cooperation.
+        </p>
 
-    <!-- Lecture Demo -->
-    <section class="container my-5 text-center">
-        <h2 class="edu-title">Free Demo Lecture</h2>
-        <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
-            <iframe src="https://www.youtube.com/embed/_yhmAt5Rbs4" title="Demo Lecture" allowfullscreen></iframe>
-        </div>
-    </section>
+        <!-- Two Column Layout -->
+        <div class="row mt-5">
 
-    <!-- Testimonial -->
-    <section class="container my-5 edu-testimonial">
-        <div class="row align-items-center">
+            <!-- Left: Therapy Details + Accordion -->
             <div class="col-md-6">
-                <h2 class="edu-title text-white">Real Student Feedback</h2>
-                <blockquote class="blockquote">
-                    <p>“Every module was clear, deep, and empowering. I now use CBT and trauma tools confidently in my
-                        practice.”</p>
-                    <footer class="blockquote-footer text-white mt-2">Ravina Malhotra, Clinical Intern</footer>
-                </blockquote>
+                <h4 class="section-title">Liaison </h4>
+                <p style="text-align: justify;">
+                    Liaison Psychiatry, also known as Consultation-Liaison Psychiatry, is a specialized service at
+                    Manasthali that focuses on the intersection of mental and physical health. Designed for patients
+                    receiving medical or surgical care, this service addresses psychiatric concerns that often arise
+                    alongside physical illnesses. Our team collaborates closely with hospitals and healthcare
+                    professionals to provide timely psychiatric evaluations, emotional support, and mental health
+                    interventions within medical settings.
+                    By integrating psychiatrists, clinical psychologists, nurses we ensure a comprehensive,
+                    multidisciplinary approach tailored to each patient’s unique needs. Liaison Psychiatry is especially
+                    effective in areas such as geriatrics, oncology, neuropsychiatry, and in managing medically
+                    unexplained symptoms. In addition to direct patient care, we support medical teams through mental
+                    health consultations and professional training. This integrated care model improves patient
+                    outcomes, shortens recovery time, and enhances overall quality of life.
+
+                </p>
+
+                <div class="accordion" id="therapyAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne">
+                                Psychological Assessment
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#therapyAccordion">
+                            <div class="accordion-body">
+                                Assessment helps us understand cognitive, emotional and behavioral functions to build a
+                                tailored treatment plan.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo">
+                                Psychotherapy and Counselling
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#therapyAccordion">
+                            <div class="accordion-body">
+                                One-on-one or group sessions to help manage stress, trauma, depression, or relationship
+                                issues.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree">
+                                Child and Adolescent Services
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse show"
+                            data-bs-parent="#therapyAccordion">
+                            <div class="accordion-body">
+                                Specialized care focused on developmental challenges, learning disabilities, and
+                                adolescent emotional issues.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour">
+                                Stress Management
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#therapyAccordion">
+                            <div class="accordion-body">
+                                Tools and techniques like CBT, relaxation, and biofeedback to manage day-to-day stress
+                                effectively.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive">
+                                Addiction Counselling
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#therapyAccordion">
+                            <div class="accordion-body">
+                                Evidence-based counseling to address substance abuse, behavioral addictions, and relapse
+                                prevention.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 text-center">
-                <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" class="img-fluid rounded"
-                    alt="Student" style="max-height: 280px;" />
+
+            <!-- Right: Therapy Process -->
+            <div class="col-md-6">
+                <h4 class="section-title">Psychology</h4>
+                <p>
+                    Psychology ( Already existing content on site)
+                    <br>
+                    ● Psychological Assessment
+                    <br>
+                    ● Psychotherapy and Counselling
+                    <br>
+                    ● Child and Adolescent Service
+                    <br>
+                    ● Stress Management
+                    <br>
+                    ● Addiction Counselling
+
+                </p>
+                <p style="text-align: justify;">
+                    Our team provides psychiatric evaluations, emotional support, and integrates with medical
+                    professionals to ensure comprehensive mental care. We also train hospital staff and offer
+                    consultations to improve recovery time and overall health outcomes.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Newsletter CTA -->
-    <section class="container my-5 edu-cta">
-        <h2>Stay Informed About New Courses</h2>
-        <p class="mb-4">Get updates on upcoming workshops, guest lectures, and certifications.</p>
-        <form class="row g-3 justify-content-center">
-            <div class="col-md-4">
-                <input type="email" class="form-control" placeholder="Your email" required>
-            </div>
-            <div class="col-md-2">
-                <button type="submit" class="btn btn-dark w-100">Subscribe</button>
-            </div>
-        </form>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Footer -->
-    <footer class="edu-footer">
-        &copy; 2025 Psychology Network. All rights reserved.
-    </footer>
+
+    <!-- Footer Section -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -368,17 +411,12 @@
             </div><!-- /.footer-bottom -->
         </div>
     </footer>
-
-
-    <!-- JS -->
-    <script>
-        document.querySelector("form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Thanks for subscribing! You'll get course updates soon.");
-            this.reset();
-        });
-    </script>
     <script src="script.js"></script>
+    <!-- Bootstrap JS + Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
 </body>
 
 </html>
