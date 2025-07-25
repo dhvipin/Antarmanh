@@ -32,12 +32,15 @@
      top: 50px;
  }
 
- /* .search-icon {
+ .search-icon {
      font-size: 1.3rem;
      color: black;
+     margin-right: 20px;
+     /* line-height: 100px; */
      cursor: pointer;
+     /* background-color: #28a745; */
      padding: 0 10px;
- } */
+ }
 
  .logo-div {
      width: fit-content;
@@ -136,7 +139,7 @@
 
  .nav-item {
      /* background-color: #0d6efd; */
-     margin: auto 60px;
+     margin: auto 30px;
 
      /* background-color: #00bcd4; */
      /* justify-content: space-between; */
@@ -148,6 +151,36 @@
      /* background-color: #0d6efd; */
      /* margin: 20px 20px; */
  }
+
+ #searchBarContainer {
+        display: none;
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 6px;
+        width: 400px;
+        max-width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        z-index: 1050;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 991px) {
+        #searchBarContainer {
+            right: 10px;
+            top: 60px;
+            width: 90%;
+        }
+    }
+
+   .highlight {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
 
  /* Mobile styles - stack submenus vertically */
  @media (max-width: 991px) {
@@ -286,6 +319,54 @@
          transform: translateX(-100%);
      }
  }
+
+
+
+ /* service section  our aprroach and our stry css  */
+
+
+ /* Global Section Styling */
+.vp-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.vp-section-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000000;
+}
+
+/* Story Section */
+.vp-story-section {
+  background: #f9f9f9;
+}
+
+/* Approach Section */
+.vp-approach-section {
+  background-color:var(--primary-color);
+}
+
+/* Responsive Image Styling */
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.03);
+}
+.vp-section-title, .vp-section-text, .img-fluid {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.vp-section-title.show, .vp-section-text.show, .img-fluid.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 
  /* hero section image slider  */
@@ -1722,6 +1803,74 @@
      padding: 30px 0;
      color: #777;
  }
+
+ .vp-team-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.vp-team-card:hover {
+  transform: scale(1.01);
+}
+
+.vp-team-img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.vp-team-text {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 0 12px 12px 0;
+}
+
+.vp-team-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.vp-team-role {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.vp-team-social i {
+  font-size: 1.2rem;
+  color: #444;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.vp-team-social i:hover {
+  color: #007bff;
+}
+
+.vp-team-desc {
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+}
+
+.vp-btn-profile {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.vp-btn-profile:hover {
+  background-color: #004d99;
+}
 
 
  /* Project perspective all css is heree   */

@@ -1,31 +1,50 @@
+// Optional: Reveal animation on scroll
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.vp-section-title, .vp-section-text, .img-fluid');
 
-    // const toggler = document.querySelector('.custom-toggler');
-    // const closeBtn = document.querySelector('.navbar-close');
-    // const navbarCollapse = document.querySelector('.navbar-collapse');
+    const revealOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.85;
+        elements.forEach(el => {
+            const boxTop = el.getBoundingClientRect().top;
+            if (boxTop < triggerBottom) {
+                el.classList.add('show');
+            }
+        });
+    };
 
-    // toggler.addEventListener('click', () => {
-    //     navbarCollapse.classList.add('show');
-    //     toggler.style.display = 'none';
-    //     closeBtn.style.display = 'block';
-    // });
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // trigger on load
+});
 
-    // closeBtn.addEventListener('click', () => {
-    //     navbarCollapse.classList.remove('show');
-    //     toggler.style.display = 'block';
-    //     closeBtn.style.display = 'none';
-    // });
+// Optional CSS animation for .show class (add this in CSS file)
 
-    // // For dropdown toggle on small screens
-    // const dropdownLinks = document.querySelectorAll('.nav-item.dropdown > a');
-    // dropdownLinks.forEach(link => {
-    //     link.addEventListener('click', function (e) {
-    //         if (window.innerWidth < 992) {
-    //             e.preventDefault();
-    //             const dropdownMenu = this.nextElementSibling;
-    //             dropdownMenu.classList.toggle('show');
-    //         }
-    //     });
-    // });
+// const toggler = document.querySelector('.custom-toggler');
+// const closeBtn = document.querySelector('.navbar-close');
+// const navbarCollapse = document.querySelector('.navbar-collapse');
+
+// toggler.addEventListener('click', () => {
+//     navbarCollapse.classList.add('show');
+//     toggler.style.display = 'none';
+//     closeBtn.style.display = 'block';
+// });
+
+// closeBtn.addEventListener('click', () => {
+//     navbarCollapse.classList.remove('show');
+//     toggler.style.display = 'block';
+//     closeBtn.style.display = 'none';
+// });
+
+// // For dropdown toggle on small screens
+// const dropdownLinks = document.querySelectorAll('.nav-item.dropdown > a');
+// dropdownLinks.forEach(link => {
+//     link.addEventListener('click', function (e) {
+//         if (window.innerWidth < 992) {
+//             e.preventDefault();
+//             const dropdownMenu = this.nextElementSibling;
+//             dropdownMenu.classList.toggle('show');
+//         }
+//     });
+// });
 
 
 
@@ -52,31 +71,31 @@
 //         });
 //     }
 // });
- // Mobile menu toggle functionality
-        // document.querySelector('.custom-toggler').addEventListener('click', function() {
-        //     document.querySelector('.navbar-collapse').classList.add('show');
-        //     document.querySelector('.custom-toggler').style.display = 'none';
-        //     document.querySelector('.navbar-close').style.display = 'block';
-        // });
+// Mobile menu toggle functionality
+// document.querySelector('.custom-toggler').addEventListener('click', function() {
+//     document.querySelector('.navbar-collapse').classList.add('show');
+//     document.querySelector('.custom-toggler').style.display = 'none';
+//     document.querySelector('.navbar-close').style.display = 'block';
+// });
 
-        // document.querySelector('.navbar-close').addEventListener('click', function() {
-        //     document.querySelector('.navbar-collapse').classList.remove('show');
-        //     document.querySelector('.custom-toggler').style.display = 'block';
-        //     document.querySelector('.navbar-close').style.display = 'none';
-        // });
+// document.querySelector('.navbar-close').addEventListener('click', function() {
+//     document.querySelector('.navbar-collapse').classList.remove('show');
+//     document.querySelector('.custom-toggler').style.display = 'block';
+//     document.querySelector('.navbar-close').style.display = 'none';
+// });
 
-        // // For mobile, toggle submenus on click
-        // if (window.innerWidth <= 991) {
-        //     document.querySelectorAll('.dropdown-item').forEach(item => {
-        //         if (item.nextElementSibling && item.nextElementSibling.classList.contains('submenu')) {
-        //             item.addEventListener('click', function(e) {
-        //                 e.preventDefault();
-        //                 const submenu = this.nextElementSibling;
-        //                 submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-        //             });
-        //         }
-        //     });
-        // }
+// // For mobile, toggle submenus on click
+// if (window.innerWidth <= 991) {
+//     document.querySelectorAll('.dropdown-item').forEach(item => {
+//         if (item.nextElementSibling && item.nextElementSibling.classList.contains('submenu')) {
+//             item.addEventListener('click', function(e) {
+//                 e.preventDefault();
+//                 const submenu = this.nextElementSibling;
+//                 submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+//             });
+//         }
+//     });
+// }
 
 
 
@@ -152,6 +171,87 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+
+
+
+    // search icon all jss is here 
+    function removeHighlights() {
+        document.querySelectorAll(".highlight").forEach(el => {
+            const parent = el.parentNode;
+            parent.replaceChild(document.createTextNode(el.textContent), el);
+            parent.normalize();
+        });
+    }
+
+    function highlightTextInHeadings(keyword) {
+        removeHighlights(); // Clear old highlights
+        const searchResults = document.getElementById("searchResults");
+        searchResults.innerHTML = "";
+
+        if (!keyword || keyword.length < 2) return;
+
+        const regex = new RegExp(`(${keyword})`, "gi");
+        const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+        let found = 0;
+
+        headings.forEach((el, index) => {
+            const text = el.innerText;
+
+            if (text.toLowerCase().includes(keyword.toLowerCase())) {
+                found++;
+                const id = el.id || `heading-${index}`;
+                el.id = id;
+
+                // Highlight keyword
+                const originalText = el.innerText;
+                const highlightedText = originalText.replace(regex, '<span class="highlight">$1</span>');
+                el.innerHTML = highlightedText;
+
+                // Show search result link
+                const resultItem = document.createElement("li");
+                resultItem.className = "list-group-item list-group-item-action";
+                resultItem.textContent = originalText;
+                resultItem.addEventListener("click", () => {
+                    document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "center" });
+                    document.getElementById("searchBarContainer").style.display = "none";
+                });
+
+                searchResults.appendChild(resultItem);
+            }
+        });
+
+        if (found === 0) {
+            const li = document.createElement("li");
+            li.className = "list-group-item text-danger";
+            li.textContent = "No matches found.";
+            searchResults.appendChild(li);
+        }
+    }
+
+    // Toggle search bar
+    const toggleBtn = document.getElementById("toggleSearch");
+    const searchBar = document.getElementById("searchBarContainer");
+    const searchInput = document.getElementById("searchInput");
+
+    toggleBtn.addEventListener("click", () => {
+        const isVisible = searchBar.style.display === "block";
+        searchBar.style.display = isVisible ? "none" : "block";
+
+        if (!isVisible) {
+            searchInput.focus();
+        }
+    });
+
+    // Trigger search
+    searchInput.addEventListener("input", () => {
+        const keyword = searchInput.value.trim();
+        highlightTextInHeadings(keyword);
+    });
+
+
+
+
+
     // Close dropdowns when clicking outside (desktop)
     document.addEventListener('click', function (e) {
         if (window.innerWidth > 991) {
@@ -211,9 +311,9 @@ function showSlides() {
 const therapies = [
     {
         id: 1,
-        title: "Cognitive Behavioral Therapy",
-        image: "assets/content-moderatora.webp",
-        description: "CBT helps you identify and change negative thought patterns that influence your emotions and behavior.",
+        title: "Depression",
+        image: "assets/depresionIMG.jpg",
+        description: "We offer support and evidence-based therapy to help you overcome feelings of sadness, hopelessness, and loss of interest in life.",
         features: [
             "Identify negative thought patterns",
             "Develop coping strategies",
@@ -223,9 +323,9 @@ const therapies = [
     },
     {
         id: 2,
-        title: "Family Counseling",
-        image: "assets/corporate-wellness-service-1.webp",
-        description: "Improve communication and resolve conflicts within your family system for healthier relationships.",
+        title: "Anxiety",
+        image: "assets/anxietyIMG.jpg",
+        description: "Our treatment helps you manage excessive worry, fear, and panic, allowing you to regain control and peace of mind.",
         features: [
             "Improve family communication",
             "Resolve conflicts",
@@ -235,9 +335,9 @@ const therapies = [
     },
     {
         id: 3,
-        title: "Trauma Therapy",
-        image: "assets/resilince-building.webp",
-        description: "Specialized approaches to help process and recover from traumatic experiences.",
+        title: "Stress Management",
+        image: "assets/stressIMG.jpg",
+        description: "Learn healthy coping strategies to deal with personal, academic, or professional stress and restore emotional balance.",
         features: [
             "EMDR therapy available",
             "Trauma processing techniques",
@@ -247,9 +347,9 @@ const therapies = [
     },
     {
         id: 4,
-        title: "Anxiety Management",
-        image: "assets/leadership-1.webp",
-        description: "Learn techniques to manage anxiety symptoms and regain control of your life.",
+        title: "Personality Disorders",
+        image: "assets/personalityIMG.jpg",
+        description: "We provide structured therapy to help individuals manage long-standing patterns of thinking and behavior that affect relationships and daily life.",
         features: [
             "Relaxation techniques",
             "Exposure therapy",
@@ -259,9 +359,9 @@ const therapies = [
     },
     {
         id: 5,
-        title: "Couples Therapy",
-        image: "assets/learning-development-1.webp",
-        description: "Strengthen your relationship through improved communication and conflict resolution.",
+        title: "Child and Adolescent",
+        image: "assets/childIMG.jpg",
+        description: "Specialized care for young minds dealing with behavioral, emotional, or developmental challenges during critical growth stages.",
         features: [
             "Improve communication skills",
             "Conflict resolution strategies",
@@ -271,9 +371,33 @@ const therapies = [
     },
     {
         id: 6,
-        title: "Mindfulness Therapy",
-        image: "assets/psychological-safety.webp",
-        description: "Cultivate present-moment awareness to reduce stress and improve emotional regulation.",
+        title: "Schizophrenia",
+        image: "assets/SchizophreniaIMg.jpg",
+        description: "We assist individuals in understanding and managing symptoms like hallucinations, delusions, and disorganized thinking with compassion and care.",
+        features: [
+            "Meditation techniques",
+            "Body awareness exercises",
+            "Stress reduction",
+            "Emotional regulation"
+        ]
+    },
+     {
+        id: 7,
+        title: "Bipolar Disorders",
+        image: "assets/Bipolar.jpg",
+        description: "Support for managing mood swings—from depressive lows to manic highs—through therapy and structured routines.",
+        features: [
+            "Meditation techniques",
+            "Body awareness exercises",
+            "Stress reduction",
+            "Emotional regulation"
+        ]
+    },
+     {
+        id: 8,
+        title: "OCD (Obsessive-Compulsive Disorder)",
+        image: "assets/OCDIMG.jpg",
+        description: "We help reduce intrusive thoughts and compulsive behaviors through targeted therapies like CBT and exposure techniques.",
         features: [
             "Meditation techniques",
             "Body awareness exercises",
