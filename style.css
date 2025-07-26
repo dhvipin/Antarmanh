@@ -451,7 +451,7 @@ img:hover {
      margin-bottom: 50px;
  }
 
- .therapy-header h2 {
+ .therapy-header h1 {
      color: var(--primary-color);
      font-weight: 700;
      position: relative;
@@ -2336,4 +2336,29 @@ img:hover {
     margin-right: 0;
     margin-bottom: 20px;
   }
+}
+
+
+
+
+
+ /* maya all css is herer ? */
+
+ /* Hero Banner */
+.maya-hero {
+ 
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('assets/anxietyIMG.jpg') center/cover no-repeat;
+  height: 100vh;
+}
+
+/* Section Styling */
+.feature-card {
+  transition: transform 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+.join-section{
+    background-color: var(--primary-color);
 }
