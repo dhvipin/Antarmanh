@@ -957,6 +957,15 @@
  }
 
 
+ /*=========plan-card=========*/
+.plan-card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px;
+    height: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+}
 
  /* Foooter Csss */
 
@@ -1666,7 +1675,7 @@
  /* collobarations page css here all  */
 
  .collab-hero {
-     background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b') center/cover no-repeat;
+     background: url('assets/collab.jpg') center/cover no-repeat;
      padding: 120px 0;
      color: white;
      position: relative;
@@ -1677,7 +1686,7 @@
      content: "";
      position: absolute;
      inset: 0;
-     background-color: rgba(0, 0, 0, 0.4);
+     background-color: rgba(0, 0, 0, 0.7);
      z-index: 0;
  }
 
@@ -2355,8 +2364,14 @@
  }
 
 
-
-
+/*  maya for wellness page  */
+  
+.mfw-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('assets/mfw-bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    color: white;
+}
 
  /* maya all css is herer ? */
  /* Hero Banner */
