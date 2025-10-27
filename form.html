@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wellness Appointment Form</title>
+<style>
+:root {
+  --primary-color: #a94a82;
+  --secondary-color: #f8f9fa;
+  --dark-color: #343a40;
+  --light-color: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--secondary-color);
+  margin: 0;
+  padding: 40px 20px;
+  color: var(--dark-color);
+}
+
+.container {
+  background: var(--light-color);
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h2 {
+  background: var(--primary-color);
+  color: var(--light-color);
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.box {
+  background: var(--secondary-color);
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(169, 74, 130, 0.2);
+}
+
+.box:hover {
+  box-shadow: 0 2px 10px rgba(169, 74, 130, 0.3);
+  transform: translateY(-3px);
+}
+
+.box h3 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+textarea, input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95em;
+  margin-bottom: 12px;
+  transition: border-color 0.3s;
+}
+
+textarea:focus, input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px rgba(169, 74, 130, 0.3);
+}
+
+button {
+  background: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #8b3a6b;
+  transform: scale(1.03);
+}
+
+.footer {
+  background: var(--dark-color);
+  color: var(--light-color);
+  padding: 25px 20px;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.footer strong {
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Start Your Wellness Journey With Us - Book an Appointment</h2>
+
+    <div class="grid">
+      <!-- Clinic Timings -->
+      <div class="box">
+        <h3>Clinic Timings</h3>
+        <p><strong>10 AM - 2 PM</strong><br>Mon, Tue, Wed, Thu, Fri</p>
+        <p><strong>5 PM - 8 PM</strong><br>Mon, Tue, Thu, Fri</p>
+        <p><strong>10 AM - 5 PM</strong><br>Saturday</p>
+      </div>
+
+      <!-- Services -->
+      <div class="box">
+        <h3>Services</h3>
+        <ul>
+          <li>Psychiatric Diagnosis and Management<br>
+            <strong>Specialist:</strong> Dr Jyoti Kapoor (MBBS, DPM, DNB, FMCN, FIPS)
+          </li>
+          <li>Clinical Psychology – Assessments, Psychotherapies<br>
+            <strong>Specialist:</strong> Ms. Aishwarya Raj (MA, M Phil)
+          </li>
+          <li>Ms. Ritu Kuhar (<a href="#">M.Sc (Clinical Psychology)</a>)</li>
+          <li>Integrative Mental Health Services</li>
+          <li>Music Therapy – Dr Shambhavi Das</li>
+        </ul>
+      </div>
+
+      <!-- Address -->
+      <div class="box">
+        <h3>Address & Location</h3>
+        <textarea placeholder="Enter address here..." rows="6"></textarea>
+      </div>
+
+      <!-- Appointment Form -->
+      <div class="box">
+        <h3>Appointment Form</h3>
+        <form id="appointmentForm">
+          <label>Name:</label>
+          <input type="text" required>
+
+          <label>Age:</label>
+          <input type="number" required>
+
+          <label>Phone Number:</label>
+          <input type="tel" required>
+
+          <label>Email ID:</label>
+          <input type="email" required>
+
+          <label>Select Specialist:</label>
+          <select required>
+            <option value="">-- Select --</option>
+            <option>Dr Jyoti Kapoor</option>
+            <option>Ms Aishwarya Raj</option>
+            <option>Ms Ritu Kuhar</option>
+            <option>Dr Shambhavi Das</option>
+          </select>
+
+          <label>Preferred Date:</label>
+          <input type="date" required>
+
+          <label>Preferred Time Slot:</label>
+          <input type="time" required>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Consultation is strictly by appointment<br>
+        No Walk-in consultations are entertained<br>
+        Consultation Fee is charged according to consultation duration<br>
+        For more information, call or WhatsApp at <strong>9958598967</strong>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
