@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Program | Manasthali</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- index.php  header part -->
+
+    <div class="scroll-left">
+        <p>The Manasthali helpline number has been temporarily paused. For appointments, please call or WhatsApp +91 -
+            9958598967
+        </p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand logo-div" href="#"><img class="nav-logo" src="assets/logo.png" alt=""></a>
+
+            <!-- Toggle Button - Modified for custom functionality -->
+            <div class="navbar-toggler-wrapper">
+                <button class="navbar-toggler custom-toggler" type="button" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <button class="navbar-close" aria-label="Close navigation" style="display: none;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Navbar content - Modified structure -->
+            <div class="navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 k-mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Teams.html" role="button">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="leadership.html">Leadership</a></li>
+                            <li><a class="dropdown-item" href="core-team.html">Core Team</a></li>
+                            <li><a class="dropdown-item" href="Collaboration.html">Collaborations</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown with nested submenus -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Service.html" role="button">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="">Clinical</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="Psychiatry.html">Psychiatry</a></li>
+                                    <li><a class="dropdown-item" href="Psychology.html">Psychology</a></li>
+                                    <li><a class="dropdown-item" href="Liaison.html">Liaison</a></li>
+                                    <!-- <li>
+                                        <a class="dropdown-item" href="#">More Clinical</a>
+                                        <ul class="dropdown-menu submenu">
+                                            <li><a class="dropdown-item" href="#">Advanced 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Advanced 2</a></li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">Educations</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="#">Awareness</a></li>
+                                    <li><a class="dropdown-item" href="TraningPage.html">Trainings</a></li>
+                                    <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">Wellness</a>
+                                <ul style="height: 120px;" class="dropdown-menu  submenu">
+                                    <li><a class="dropdown-item" href="IntegrativeWellness.html">Integrative Wellness
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="Maya.html">MAYA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Corporate Wellness
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="project-positive-health.html">Project Positive Health</a>
+                            </li>
+                            <li><a class="dropdown-item" href="Atmsandhan.html">Atmsandhan</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Miscellaneous.html">Miscellaneous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                </ul>
+
+                <!-- Right side search icon -->
+                <div class="d-flex ">
+                    <!-- <a href="#" class="nav-link search-icon ">
+                        <i class="bi bi-search search-icon"></i>
+                    </a> -->
+                    <button class="btn search-icon" id="toggleSearch">
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <div id="searchBarContainer">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search here..." />
+                        <ul id="searchResults" class="list-group mt-2"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <!-- HEADER + NAVBAR: Include your navbar HTML here -->
+
+    <section class="atms-hero">
+        <div class="container">
+            <h1 class="atms-title">Internship Program</h1>
+            <p class="lead">Hands-on learning for UG and PG Psychology students at Manasthali</p>
+        </div>
+    </section>
+
+    <section class="atms-section internship-section">
+        <div class="container">
+            <h2 class="mb-4 text-center">Welcome to Our Internship Program</h2>
+            <p>At Manasthali, we are committed to nurturing the next generation of mental health professionals. Our
+                Internship Program is carefully designed for Undergraduate (UG) and Postgraduate (PG) psychology
+                students who want to gain practical exposure, clinical insights, and hands-on learning beyond the
+                classroom.</p>
+            <p>We believe that real learning happens when theory meets practice—and our internship creates exactly that
+                bridge.</p>
+        </div>
+    </section>
+
+    <section class="atms-section bg-light internship-section">
+        <div class="container">
+            <h2 class="mb-4 text-center">Program Objectives</h2>
+            <ul>
+                <li>Understand how therapy and psychiatric consultations are conducted in real-world clinical settings.
+                </li>
+                <li>Learn to apply classroom knowledge in a professional environment.</li>
+                <li>Gain exposure to a variety of mental health concerns and therapeutic approaches.</li>
+                <li>Build foundational skills in case history taking, MSE (Mental Status Examination), psychological
+                    assessments, and clinical observation.</li>
+                <li>Develop confidence in interacting with professionals and eventually with clients.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="atms-section internship-section">
+        <div class="container">
+            <h2 class="mb-4 text-center">What You Will Learn & Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>1. Clinical Observation</h5>
+                    <ul>
+                        <li>Observe licensed psychologists, therapists, and psychiatrists in action.</li>
+                        <li>Get a first-hand look at OPD sessions, therapy sessions, and multidisciplinary teamwork.
+                        </li>
+                        <li>Understand how professionals build rapport, ask the right questions, and guide clients.</li>
+                    </ul>
+
+                    <h5>2. Case-Based Learning</h5>
+                    <ul>
+                        <li>Learn about different mental health disorders through live cases and discussions.</li>
+                        <li>Participate in case study presentations and discussions led by supervisors.</li>
+                        <li>Understand how diagnosis is made, and how treatment plans are created.</li>
+                    </ul>
+
+                    <h5>3. Skill Training</h5>
+                    <ul>
+                        <li>Training in case history taking and MSE (Mental Status Examination).</li>
+                        <li>Exposure to psychological assessments (cognitive, personality, clinical tools).</li>
+                        <li>Learn documentation, observation, and reflective writing.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>4. Interactive Learning</h5>
+                    <ul>
+                        <li>Engage in Q&A sessions with our experts.</li>
+                        <li>Small group interactions for peer learning and discussions.</li>
+                    </ul>
+
+                    <h5>5. Professional Exposure</h5>
+                    <ul>
+                        <li>Learn about the ethics of clinical practice.</li>
+                        <li>Understand how to work in a team-based setting (psychologists, psychiatrists, counselors).
+                        </li>
+                        <li>Explore different therapeutic modalities (CBT, family therapy, integrative approaches,
+                            etc.).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="atms-section bg-light internship-section">
+        <div class="container text-center">
+            <h2 class="mb-4">Program Details</h2>
+            <ul class="list-unstyled">
+                <li><strong>Duration:</strong> 1 month (batches begin every 15 days)</li>
+                <li><strong>Timing:</strong> Flexible, designed to fit student schedules</li>
+                <li><strong>Mode:</strong> In-person at our clinic, with hybrid options if available</li>
+                <li><strong>Eligibility:</strong> UG & PG psychology students (all specializations)</li>
+                <li><strong>Fees:</strong> ₹7,000 per month</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="atms-section internship-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Why Choose Our Internship?</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="bi bi-person-lines-fill atms-icon"></i>
+                    <h5>Clinical Exposure</h5>
+                    <p>Gain real-world experience beyond textbooks.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-award atms-icon"></i>
+                    <h5>Learn from Professionals</h5>
+                    <p>Direct mentorship from therapists and psychiatrists.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-people atms-icon"></i>
+                    <h5>Network & Grow</h5>
+                    <p>Collaborate with peers and industry experts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="atms-section bg-light internship-section">
+        <div class="container text-center">
+            <h2 class="mb-4">What Past Interns Say</h2>
+            <!-- Embed video or placeholder -->
+            <p>[Embed testimonial video here]</p>
+        </div>
+    </section>
+
+    <section class="atms-section internship-section">
+        <div class="container text-center">
+            <h2 class="mb-4">How to Apply</h2>
+            <ul class="list-unstyled">
+                <li>📞 <strong>Contact Us</strong> via call or WhatsApp</li>
+                <li>📋 Our team will confirm your batch</li>
+                <li>🧍‍♀️ Limited seats per batch for personal attention</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="collab-footer">
+        &copy; 2025 Psychology Network. All rights reserved.
+    </footer>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class=" footer-mask">
+            <div class="container footer-contant">
+                <div class="row">
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <div class="footer-logo"><a href="#"><img src="assets/logo.png" alt="" /></a></div>
+                        <div class="social">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="title">
+                            <h4>Contact</h4>
+                        </div>
+                        <ul class="list list-contact  list-news">
+                            <li>Address:- 239 - Basement, Sector 45, Gurugram, Haryana 122001
+
+                            </li>
+                            <li><i class="fa fa-phone"></i> 9958598967</li>
+                            <li><i class="fa fa-phone"></i> 9958598967</li>
+                            <li><i class="fa fa-envelope"></i> manasthali2016@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6  hidden-sm hidden-xs">
+                        <div class="title">
+                            <h4>Services</h4>
+                        </div>
+                        <ul class="list list-news">
+                            <li>
+                                <a href="page_gallery.html" class="title">Psychological Assessment
+                                </a>
+                                <!-- <span class="description">
+                                    January 6, 2017
+                                </span> -->
+                            </li>
+                            <li>
+                                <a href="page_gallery.html" class="title">Psychotherapy And Counseling
+                                </a>
+                                <!-- <span class="description">
+                                    May 22, 2017
+                                </span> -->
+                            </li>
+                            <li>
+                                <a href="page_gallery.html" class="title"> Child and Adolescent Service
+                                </a>
+                                <!-- <span class="description">
+                                    June 22, 2017
+                                </span> -->
+                            </li>
+                            <li>
+                                <a href="page_gallery.html" class="title">Stress Management</a>
+
+                                <!-- <span class="description">
+                                    January 19, 2017
+                                </span> -->
+                            </li>
+                            <li>
+                                <a href="page_gallery.html" class="title">Addiction Counselling
+                                </a>
+                                <!-- <span class="description">
+                                    January 27, 2017
+                                </span> -->
+                            </li>
+                            <li>
+                                <a href="page_gallery.html" class="title">Manasthali Support Groups
+                                </a>
+                                <!-- <span class="description">
+                                    January 27, 2017
+                                </span> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="title">
+
+                            <h4>Opening hours</h4>
+                        </div>
+                        <ul class="list list-hours">
+                            <li>
+                                <a href="page_gallery.html" class="title">Mon - Tues - Wed - thu - Fri :</a>
+                                
+                            </li>
+                            
+                            <li>
+                                
+                                <span class="title" style="color: #a3a3a3;">
+                                    10.00am - 02.00pm, 05.00pm - 11.30pm
+                                </span>
+                            </li>
+                            <li>
+                                <a href="page_gallery.html" class="title">Sat:</a>
+                                <span class="description" style="color: #a3a3a3;">
+                                    10.00am - 05.00pm
+                                </span>
+                            </li>
+                            <li>
+                                <a href="page_gallery.html" class="title">Sun:</a>
+                                <span class="description">
+                                    Closed
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.footer-content -->
+            <div class="footer-bottom">
+                <div class="container text-right">
+                    <span class=""><a href="#">© Copyright 2025 Manasthali. All Rights Reserved.</a></span>
+                </div>
+            </div><!-- /.footer-bottom -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
